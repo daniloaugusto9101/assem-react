@@ -9,7 +9,7 @@ export default {
   theme: {
     colors: {
       secondary: colors.red,
-      ternary: colors.gray,
+      ternary: colors.neutral,
     },
     extend: {
       keyframes: {
@@ -33,16 +33,16 @@ export default {
       },
       colors: {
         primary: {
-          50: '#f9f9fa',
-          100: '#f2f2f4',
-          200: '#e0e0e6',
-          300: '#c1c1c8',
-          400: '#78788d',
-          500: '#363756', // Cor base
-          600: '#30334f',
-          700: '#252639',
-          800: '#1c1c2b',
-          900: '#16161f',
+          50: '#f3f3f7',
+          100: '#e1e1eb',
+          200: '#cecce4',
+          300: '#bcb7dd',
+          400: '#a9a2d7',
+          500: '#969dd0',
+          600: '#7e7ebf',
+          700: '#6666ae',
+          800: '#4e4e9d',
+          900: '#363756', // Cor mais escura
         },
       },
     },

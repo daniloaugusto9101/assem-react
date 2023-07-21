@@ -1,11 +1,12 @@
 import React from "react"
-import NavBar from "./NavBar"
+import NavBar from "./navbar/NavBar"
+import Logo from "./Logo"
 
 const Header = () => {
   return (
-    <header className="bg-primary-500 text-secondary-950 p-4">
-      <div className="bg- container m-auto flex justify-between items-center animate-slide-top">
-        <p>Logo</p>
+    <header className=" p-2 mt-3 left-0 w-full absolute z-50">
+      <div className="container m-auto flex justify-between items-center ">
+        <Logo />
         <NavBar />
       </div>
     </header>
