@@ -2,12 +2,12 @@ export const MenuData = [
   {
     title: "Início",
     url: "/",
-    dropDow: [{}],
+    dropDow: [],
   },
   {
     title: "Notícias",
     url: "/noticias",
-    dropDow: [{}],
+    dropDow: [],
   },
   {
     title: "ASSEM",
@@ -16,7 +16,7 @@ export const MenuData = [
       {
         title: "Trabalhe Conosco",
         url: "/trabalhe",
-        dropDow: [{}],
+        dropDow: [],
       },
       {
         title: "Institucional",
@@ -25,12 +25,12 @@ export const MenuData = [
           {
             title: "Diretoria Executiva",
             url: "/trabalhe",
-            dropDow: [{}],
+            dropDow: [],
           },
           {
             title: "Conselho Fiscal",
             url: "/trabalhe",
-            dropDow: [{}],
+            dropDow: [],
           },
         ],
       },

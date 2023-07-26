@@ -1,10 +1,10 @@
 import React from "react"
-import SlideFadeIn from "../common/slide-fade-in/SlideFadeIn"
+import Banner from "../common/banner/Banner"
 
 const Home = () => {
   return (
     <>
-      <SlideFadeIn />
+      <Banner />
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eaque,
         earum sint consequuntur debitis aliquid illo vitae. Eaque facere
