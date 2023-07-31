@@ -4,14 +4,11 @@ import Logo from "./Logo"
 
 const Header = () => {
   return (
-    <header className="bg-ternary-900 bg-opacity-30  py-4 left-0 w-full absolute z-50">
+    <header className="bg-ternary-900 bg-opacity-30  py-4 left-0 w-full h-screen absolute z-50">
       <div className=" container m-auto flex justify-between items-center">
         <Logo />
         <Navbar />
-        <a
-          href=""
-          className="block bg-secondary-700 p-3 rounded text-primary-50"
-        >
+        <a href="" className="">
           Fique Sócio
         </a>
       </div>

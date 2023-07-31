@@ -12,7 +12,7 @@ import Footer from "./components/common/Footer"
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
