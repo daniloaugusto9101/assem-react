@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import colors from 'tailwindcss/colors';
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 export default {
   content: [
@@ -12,6 +13,9 @@ export default {
       ternary: colors.neutral,
     },
     extend: {
+      fontFamily: {
+        'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
+      },
       keyframes: {
         slideLeft: {
           "0%": { transform: "translateX(-10px)", opacity: "0" },
