@@ -5,20 +5,22 @@ import SectionDuplo from "../common/sectionDuplo/SectionDuplo"
 import imgAssociar from "../../assets/pageHome/associar.webp"
 import imgConvenio from "../../assets/pageHome/convenio2.webp"
 import imgCompras from "../../assets/pageHome/compras.webp"
+import SlideAtividades from "../common/SlideAtividades/SlideAtividades"
+import SectionLocais from "../common/SectionLocais/SectionLocais"
 
 const Home = () => {
   return (
     <>
       {/* <Banner /> */}
       {/* <BannerNoticias /> */}
-      <SectionDuplo
+      {/* <SectionDuplo
         title="Por que me associar?"
         text="Junte-se a nós, como associado, você terá acesso a uma variedade de atividades e eventos emocionantes, ter experiência e diversão com nossa Pousada e Clube de Campo. Não perca mais tempo, torne-se um associado hoje mesmo"
         txtBtn="Saiba mais"
         img={imgAssociar}
         reserve={false}
-      />
-      <SectionDuplo
+      /> */}
+      {/* <SectionDuplo
         title="
         Convênios médicos"
         text="
@@ -26,8 +28,10 @@ const Home = () => {
         txtBtn="Saiba mais"
         img={imgConvenio}
         reserve={true}
-      />
-      <SectionDuplo
+      /> */}
+      <SlideAtividades />
+      <SectionLocais />
+      {/* <SectionDuplo
         title="
         Clube de desconto"
         text="
@@ -35,7 +39,7 @@ const Home = () => {
         txtBtn="Saiba mais"
         img={imgCompras}
         reserve={false}
-      />
+      /> */}
     </>
   )
 }

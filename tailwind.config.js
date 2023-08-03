@@ -18,22 +18,22 @@ export default {
       },
       keyframes: {
         slideLeft: {
-          "0%": { transform: "translateX(-10px)", opacity: "0" },
+          "0%": { transform: "translateX(-20px)", opacity: "0" },
           "100%": { transform: "initial", opacity: "1" },
         },
         slideRight: {
-          "0%": { transform: "translateX(10px)", opacity: "0" },
+          "0%": { transform: "translateX(20px)", opacity: "0" },
           "100%": { transform: "initial", opacity: "1" },
         },
         slideTop: {
-          "0%": { transform: "translateY(-10px)", opacity: "0" },
+          "0%": { transform: "translateY(-20px)", opacity: "0" },
           "100%": { transform: "initial", opacity: "1" },
         },
       },
       animation: {
-        "slide-left": "slideLeft 0.3s forwards",
-        "slide-right": "slideRight 0.3s forwards",
-        "slide-top": "slideTop 0.3s forwards",
+        "slide-left": "slideLeft 2s forwards",
+        "slide-right": "slideRight 2s forwards",
+        "slide-top": "slideTop 2s forwards",
       },
       colors: {
         primary: {
