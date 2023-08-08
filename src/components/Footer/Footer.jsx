@@ -1,6 +1,6 @@
 import React from "react"
 import MenuSegundarioList from "../MenuSegundarioList/MenuSegundarioList"
-import RedesSociaais from "../RedesSociaais/RedesSociaais"
+import RedesSociaais from "../RedesSociais/RedesSociais"
 
 const Footer = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
-import Navbar from "./navbar/Navbar"
-import Logo from "./Logo"
+import Logo from "../Logo/Logo"
+import Navbar from "../Navbar/Navbar"
 
 const Header = () => {
   return (
