@@ -7,7 +7,7 @@ import Home from "./components/pages/Home"
 import Noticias from "./components/pages/Noticias"
 import Contatos from "./components/pages/Contatos"
 import FiqueSocio from "./components/pages/FiqueSocio"
-import Footer from "./components/common/Footer"
+import Footer from "./components/common/Footer/Footer"
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/contatos" element={<Contatos />} />
         <Route path="/fique-socio" element={<FiqueSocio />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   )
 }

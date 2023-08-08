@@ -11,6 +11,7 @@ export default {
     colors: {
       secondary: colors.red,
       ternary: colors.neutral,
+      yellow: colors.yellow,
     },
     extend: {
       fontFamily: {
@@ -46,7 +47,8 @@ export default {
           600: '#7e7ebf',
           700: '#6666ae',
           800: '#4e4e9d',
-          900: '#363756', // Cor mais escura
+          900: '#363756', 
+          950: '#252646', // Cor mais escura
         },
       },
     },

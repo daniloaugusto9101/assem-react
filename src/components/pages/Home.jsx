@@ -30,7 +30,7 @@ const Home = () => {
         reserve={true}
       /> */}
       <SlideAtividades />
-      <SectionLocais />
+      {/* <SectionLocais /> */}
       {/* <SectionDuplo
         title="
         Clube de desconto"
