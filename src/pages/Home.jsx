@@ -1,18 +1,18 @@
 import React from "react"
-import Banner from "../banner/Banner"
-import BannerNoticias from "../common/bannerNoticias/BannerNoticias"
-import SectionDuplo from "../common/sectionDuplo/SectionDuplo"
-import imgAssociar from "../../assets/pageHome/associar.webp"
-import imgConvenio from "../../assets/pageHome/convenio2.webp"
-import imgCompras from "../../assets/pageHome/compras.webp"
-import SlideAtividades from "../common/SlideAtividades/SlideAtividades"
-import SectionLocais from "../common/SectionLocais/SectionLocais"
+import Banner from "../components/Banner/Banner"
+import BannerNoticias from "../components/BannerNoticias/BannerNoticias"
+import SectionDuplo from "../components/SectionDuplo/SectionDuplo"
+import SlideAtividades from "../components/SlideAtividades/SlideAtividades"
+import SectionLocais from "../components/SectionLocais/SectionLocais"
+import imgAssociar from "../assets/img/pageHome/associar.webp"
+import imgConvenio from "../assets/img/pageHome/convenio2.webp"
+import imgCompras from "../assets/img/pageHome/compras.webp"
 
 const Home = () => {
   return (
     <>
       <Banner />
-      {/* <BannerNoticias /> */}
+      <BannerNoticias />
       <SectionDuplo
         title="Por que me associar?"
         text="Junte-se a nós, como associado, você terá acesso a uma variedade de atividades e eventos emocionantes, ter experiência e diversão com nossa Pousada e Clube de Campo. Não perca mais tempo, torne-se um associado hoje mesmo"

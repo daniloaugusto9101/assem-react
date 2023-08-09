@@ -3,25 +3,25 @@ import SlideCoverflow from "../SlideCoverflow/SlideCoverflow"
 
 const imagensData = [
   {
-    url: "/src/assets/SlideAtividades/atividade1.webp",
+    url: "/src/assets/img/slideAtividades/atividade1.webp",
   },
   {
-    url: "/src/assets/SlideAtividades/atividade2.webp",
+    url: "/src/assets/img/slideAtividades/atividade2.webp",
   },
   {
-    url: "/src/assets/SlideAtividades/atividade3.webp",
+    url: "/src/assets/img/slideAtividades/atividade3.webp",
   },
   {
-    url: "/src/assets/SlideAtividades/atividade4.webp",
+    url: "/src/assets/img/slideAtividades/atividade4.webp",
   },
   {
-    url: "/src/assets/SlideAtividades/atividade5.webp",
+    url: "/src/assets/img/slideAtividades/atividade5.webp",
   },
   {
-    url: "/src/assets/SlideAtividades/atividade6.webp",
+    url: "/src/assets/img/slideAtividades/atividade6.webp",
   },
   {
-    url: "/src/assets/SlideAtividades/atividade7.webp",
+    url: "/src/assets/img/slideAtividades/atividade7.webp",
   },
 ]
 
