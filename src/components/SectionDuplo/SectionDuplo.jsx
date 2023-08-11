@@ -5,7 +5,7 @@ const SectionDuplo = (props) => {
   const [reserve, setReserve] = React.useState(props.reserve)
 
   return (
-    <section className="p-3 container m-auto grid md:grid-cols-2 gap-2 mt-20">
+    <section className="p-3 container m-auto grid md:grid-cols-2 gap-2 mt-20 ">
       <div
         className={`animate-slide-left flex justify-center items-center p-5 ${
           reserve && "animate-slide-right"

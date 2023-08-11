@@ -1,14 +1,19 @@
 import React from "react"
+import Logo from "../Logo/Logo"
 
 const NavBar = () => {
   return (
-    <nav className="mt-3">
-      <ul className="flex gap-12 text-2xl text-primary-50 ">
-        <li className="cursor-pointer">Inicio</li>
+    <nav className="container m-auto flex justify-between items-center font-thin text-2xl text-ternary-50">
+      <Logo />
+      <ul className="flex gap-12">
+        {/* <li className="cursor-pointer">Inicio</li> */}
         <li className="cursor-pointer">Notícias</li>
         <li className="cursor-pointer flex items-center">ASSEM</li>
         <li className="cursor-pointer">Contato</li>
       </ul>
+      <a href="" className="">
+        Fique Sócio
+      </a>
     </nav>
   )
 }

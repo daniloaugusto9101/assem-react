@@ -3,16 +3,17 @@ import Video from "../../assets/video/banner.mp4"
 
 const Banner = () => {
   return (
-    <div className="grid bg-secondary-950 w-full h-full">
-      {/* <video src={Video} autoplay></video> */}
+    <div className="w-full h-96 md:h-[580px] 2xl:h-[640px] relative">
+      <div className="absolute w-full h-full bg-ternary-900 bg-opacity-60"></div>
       <video
-        className="top-0 z-10 w-full md:h-screen object-cover"
+        className="w-full h-full object-cover"
         playsInline
         autoPlay
         loop
         muted
       >
         <source src={Video} type="video/mp4" />
+        Seu navegador não suporta a reprodução de vídeos.
       </video>
     </div>
   )

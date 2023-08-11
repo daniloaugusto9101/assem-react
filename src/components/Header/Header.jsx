@@ -1,19 +1,11 @@
 import React from "react"
-import Logo from "../Logo/Logo"
-import Navbar from "../Navbar/Navbar"
+import Navbar from "../NavBar/Navbar"
 
 const Header = () => {
   return (
-    <header className="bg-ternary-900 bg-opacity-30  py-4 left-0 w-full h-screen absolute z-50">
-      <div className=" container m-auto flex justify-between items-center">
-        <Logo />
-        <Navbar />
-        <a href="" className="">
-          Fique Sócio
-        </a>
-      </div>
+    <header className="fixed w-full py-4 z-50 top-0">
+      <Navbar />
     </header>
   )
 }
-
 export default Header
