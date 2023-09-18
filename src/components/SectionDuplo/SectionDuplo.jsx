@@ -5,7 +5,7 @@ const SectionDuplo = (props) => {
   const [reserve, setReserve] = React.useState(props.reserve)
 
   return (
-    <section className="p-3 container m-auto grid md:grid-cols-2 gap-2 mt-20 ">
+    <section className="p-3 container m-auto grid md:grid-cols-2 gap-2 mb-44">
       <div
         className={`animate-slide-left flex justify-center items-center p-5 ${
           reserve && "animate-slide-right"
@@ -35,7 +35,7 @@ const SectionDuplo = (props) => {
       >
         <h2 className="text-primary-900 text-5xl font-bold">{props.title}</h2>
         <p className={`text-ternary-600 text-3xl `}>{props.text}</p>
-        <Button txtBtn={props.txtBtn} />
+        <Button txtBtn={props.txtBtn} url={props.url} />
       </div>
     </section>
   )

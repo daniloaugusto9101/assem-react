@@ -1,20 +1,9 @@
 import React from "react"
 
-const MENU_SEGUNDARIO_DATA = [
-  {
-    title: "Notícias",
-    link: "/noticias",
-    dropDown: [
-      {
-        title: "Notícias",
-        link: "/noticias",
-        dropDown: [],
-      },
-    ],
-  },
+const MENU_DATA = [
   {
     title: "Institucional",
-    link: "/",
+    link: "/institucional",
     dropDown: [
       {
         title: "Diretoria Executiva",
@@ -68,42 +57,23 @@ const MENU_SEGUNDARIO_DATA = [
         dropDown: [],
       },
       {
-        title: "Clube de Desconto",
-        link: "/clube-de-desconto",
-        dropDown: [],
-      },
-    ],
-  },
-  {
-    title: "Contatos",
-    link: "/contatos",
-    dropDown: [
-      {
-        title: "Sede",
-        link: "/contatos",
-        dropDown: [],
-      },
-      {
-        title: "Clube de Campo",
-        link: "/contatos",
-        dropDown: [],
-      },
-      {
-        title: "Pousada Litoral",
-        link: "/contatos",
+        title: "Clube de Descontos",
+        link: "/clube-de-descontos",
         dropDown: [],
       },
     ],
   },
 ]
 
-const MenuSegundarioList = () => {
+const MenuModal = () => {
   return (
-    <section className="bg-primary-900 px-5 py-10 text-ternary-50">
-      <ul className="grid gap-y-4 grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:justify-items-center">
-        {MENU_SEGUNDARIO_DATA.map((obj, index) => (
+    <div className="absolute bg-primary-900 top-20 left-0 right-0">
+      <ul className="">
+        {MENU_DATA.map((obj, index) => (
           <li key={index} className="">
-            <a className="text-xl font-bold uppercase">{obj.title}</a>
+            <a href={obj.link} className="text-xl font-bold uppercase">
+              {obj.title}
+            </a>
             {obj.dropDown.length > 0 ? (
               <ul className="text-sm">
                 {obj.dropDown.map((ele, ind) => (
@@ -116,8 +86,8 @@ const MenuSegundarioList = () => {
           </li>
         ))}
       </ul>
-    </section>
+    </div>
   )
 }
 
-export default MenuSegundarioList
+export default MenuModal

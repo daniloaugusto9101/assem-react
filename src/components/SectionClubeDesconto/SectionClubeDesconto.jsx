@@ -8,6 +8,7 @@ const CLUBE_DESCONTO_DATA = {
   txtBtn: "Saiba mais",
   img: imgCompras,
   reserve: false,
+  url: "/clube-de-desconto",
 }
 
 const SectionClubeDesconto = () => {
@@ -18,6 +19,7 @@ const SectionClubeDesconto = () => {
       txtBtn={CLUBE_DESCONTO_DATA.txtBtn}
       img={CLUBE_DESCONTO_DATA.img}
       reserve={CLUBE_DESCONTO_DATA.reserve}
+      url={CLUBE_DESCONTO_DATA.url}
     />
   )
 }

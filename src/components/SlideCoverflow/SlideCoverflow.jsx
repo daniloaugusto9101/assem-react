@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef, useState } from "react"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -7,10 +7,13 @@ import "swiper/css"
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
 
+// css local
+import "./styles.css"
+
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules"
 
-const SlideCoverflow = ({ imagensData }) => {
+export default function SlideCoverflow({ imagensData }) {
   return (
     <>
       <Swiper
@@ -27,16 +30,14 @@ const SlideCoverflow = ({ imagensData }) => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="w-full pt-12 pb-12"
+        className="w-full py-12 "
       >
-        {imagensData.map((obj, id) => (
-          <SwiperSlide key={id} className="bg-center w-60 h-60 md:w-80 md:h-80">
-            <img src={obj.url} className="object-cover w-full h-full" />
+        {imagensData.map((item, id) => (
+          <SwiperSlide className="bg-cover" key={id}>
+            <img src={item.url} className="h-full object-cover" />
           </SwiperSlide>
         ))}
       </Swiper>
     </>
   )
 }
-
-export default SlideCoverflow

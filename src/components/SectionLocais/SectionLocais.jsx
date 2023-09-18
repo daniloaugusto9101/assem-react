@@ -2,7 +2,7 @@ import React from "react"
 
 const SectionLocais = () => {
   return (
-    <>
+    <section className="mb-44">
       <div className="grid bg-secondary-400 -mb-24">
         <div className="h-60 col-span-full row-span-full">
           <img
@@ -34,7 +34,7 @@ const SectionLocais = () => {
           />
           <p className="text-3xl text-center mt-3">Sede</p>
         </div>
-        <div className="mb-32 md:mb-0">
+        <div className="mb-20 md:mb-0">
           <img
             className="block w-full h-full object-cover"
             src="/src/assets/img/sectionLocais/clube.webp"
@@ -43,7 +43,7 @@ const SectionLocais = () => {
           <p className="text-3xl text-center mt-3">Clube de Campo</p>
         </div>
       </div>
-    </>
+    </section>
   )
 }
 

@@ -8,6 +8,7 @@ const ASSOCIAR_DATA = {
   txtBtn: "Saiba mais",
   img: imgAssociar,
   reserve: false,
+  url: "/fique-socio",
 }
 
 const SectionAssociar = () => {
@@ -18,6 +19,7 @@ const SectionAssociar = () => {
       txtBtn={ASSOCIAR_DATA.txtBtn}
       img={ASSOCIAR_DATA.img}
       reserve={ASSOCIAR_DATA.reserve}
+      url={ASSOCIAR_DATA.url}
     />
   )
 }

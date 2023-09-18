@@ -3,7 +3,7 @@ import Video from "../../assets/video/banner.mp4"
 
 const Banner = () => {
   return (
-    <div className="w-full h-96 md:h-[580px] 2xl:h-[640px] relative">
+    <div className="w-full h-96 md:h-[580px] 2xl:h-[640px] relative mb-44 ">
       <div className="absolute w-full h-full bg-ternary-900 bg-opacity-60"></div>
       <video
         className="w-full h-full object-cover"

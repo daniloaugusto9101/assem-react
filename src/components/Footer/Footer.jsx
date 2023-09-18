@@ -4,7 +4,7 @@ import RedesSociaais from "../RedesSociais/RedesSociais"
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="">
       <MenuSegundarioList />
       <RedesSociaais />
     </footer>

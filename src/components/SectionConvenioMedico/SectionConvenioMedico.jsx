@@ -8,6 +8,7 @@ const CONVENIO_DATA = {
   txtBtn: "Saiba mais",
   img: imgConvenio,
   reserve: true,
+  url: "/convenio-medico",
 }
 
 const SectionConvenioMedico = () => {
@@ -18,6 +19,7 @@ const SectionConvenioMedico = () => {
       txtBtn={CONVENIO_DATA.txtBtn}
       img={CONVENIO_DATA.img}
       reserve={CONVENIO_DATA.reserve}
+      url={CONVENIO_DATA.url}
     />
   )
 }
