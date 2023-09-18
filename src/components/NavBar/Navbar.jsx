@@ -19,14 +19,14 @@ const NavBar = () => {
   return (
     <nav className="container m-auto flex justify-between items-center font-thin text-2xl text-ternary-50 px-2 animate-slide-top">
       <Logo />
-      <ul className="hidden sm:flex gap-12 ">
+      <ul className="hidden md:flex gap-12 ">
         {menuInicio && <MenuLink text="Inicio" url="/" />}
         <MenuLink text="Notícias" url="/noticias" />
         <MenuLink text="ASSEM" url={location.pathname} />
         <MenuLink text="Contatos" url="/contatos" />
       </ul>
       <MenuLink text="Fique Sócio" url="/fique-socio" />
-      <GiHamburgerMenu className=" sm:hidden text-4xl  " />
+      <GiHamburgerMenu className="block md:hidden text-4xl" />
     </nav>
   )
 }

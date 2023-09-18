@@ -1,5 +1,5 @@
 import React from "react"
-import SectionDuplo from "../SectionDuplo/SectionDuplo"
+import SectionDouble from "../SectionDouble/SectionDouble"
 import imgConvenio from "../../assets/img/sectionConvenioMedico/convenio2.webp"
 
 const CONVENIO_DATA = {
@@ -12,16 +12,7 @@ const CONVENIO_DATA = {
 }
 
 const SectionConvenioMedico = () => {
-  return (
-    <SectionDuplo
-      title={CONVENIO_DATA.title}
-      text={CONVENIO_DATA.text}
-      txtBtn={CONVENIO_DATA.txtBtn}
-      img={CONVENIO_DATA.img}
-      reserve={CONVENIO_DATA.reserve}
-      url={CONVENIO_DATA.url}
-    />
-  )
+  return <SectionDouble {...CONVENIO_DATA} />
 }
 
 export default SectionConvenioMedico

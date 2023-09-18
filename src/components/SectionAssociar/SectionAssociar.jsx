@@ -1,5 +1,5 @@
 import React from "react"
-import SectionDuplo from "../SectionDuplo/SectionDuplo"
+import SectionDouble from "../SectionDouble/SectionDouble"
 import imgAssociar from "../../assets/img/sectionAssociar/associar.webp"
 
 const ASSOCIAR_DATA = {
@@ -12,16 +12,7 @@ const ASSOCIAR_DATA = {
 }
 
 const SectionAssociar = () => {
-  return (
-    <SectionDuplo
-      title={ASSOCIAR_DATA.title}
-      text={ASSOCIAR_DATA.text}
-      txtBtn={ASSOCIAR_DATA.txtBtn}
-      img={ASSOCIAR_DATA.img}
-      reserve={ASSOCIAR_DATA.reserve}
-      url={ASSOCIAR_DATA.url}
-    />
-  )
+  return <SectionDouble {...ASSOCIAR_DATA} />
 }
 
 export default SectionAssociar

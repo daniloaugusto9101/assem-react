@@ -100,7 +100,7 @@ const MENU_SEGUNDARIO_DATA = [
 const MenuSegundarioList = () => {
   return (
     <section className="bg-primary-900 px-5 py-10 text-ternary-50">
-      <ul className="grid gap-y-4 grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:justify-items-center">
+      <ul className="grid gap-y-4 grid-cols-[repeat(auto-fit,minmax(200px,1fr))] justify-items-center text-center sm:text-left">
         {MENU_SEGUNDARIO_DATA.map((obj, index) => (
           <li key={index} className="">
             <a className="text-xl font-bold uppercase">{obj.title}</a>

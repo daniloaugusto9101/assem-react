@@ -28,9 +28,11 @@ const SlideAtividades = () => {
   ]
   return (
     <div className="mb-44 flex flex-col justify-center items-center gap-y-10">
-      <TitleText title="Temos diversas atividades físicas e escolinhas" />
+      <div className=" max-w-xl">
+        <TitleText title="Temos diversas atividades físicas e escolinhas" />
+      </div>
       <SlideCoverflow imagensData={imagensData} />
-      <Button url="/atividades-fisicas" txtBtn="Atividades" />
+      <Button url="/atividades-fisicas" txtBtn="Saiba mais" />
     </div>
   )
 }
