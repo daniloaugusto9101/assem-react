@@ -1,5 +1,6 @@
 import React from "react"
 import Button from "../Button/Button"
+import TitleText from "../TitleText/TitleText"
 
 const SectionDuplo = (props) => {
   const [reserve, setReserve] = React.useState(props.reserve)
@@ -33,7 +34,7 @@ const SectionDuplo = (props) => {
         }
         `}
       >
-        <h2 className="text-primary-900 text-5xl font-bold">{props.title}</h2>
+        <TitleText title={props.title} />
         <p className={`text-ternary-600 text-3xl `}>{props.text}</p>
         <Button txtBtn={props.txtBtn} url={props.url} />
       </div>

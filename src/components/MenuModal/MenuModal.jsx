@@ -67,7 +67,7 @@ const MENU_DATA = [
 
 const MenuModal = () => {
   return (
-    <div className="absolute bg-primary-900 top-20 left-0 right-0">
+    <div className="hidden bg-primary-900 top-20 left-0 right-0">
       <ul className="">
         {MENU_DATA.map((obj, index) => (
           <li key={index} className="">

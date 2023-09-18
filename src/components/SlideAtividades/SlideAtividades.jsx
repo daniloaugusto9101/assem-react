@@ -1,5 +1,6 @@
 import Button from "../Button/Button"
 import SlideCoverflow from "../SlideCoverflow/SlideCoverflow"
+import TitleText from "../TitleText/TitleText"
 
 const SlideAtividades = () => {
   const imagensData = [
@@ -27,6 +28,7 @@ const SlideAtividades = () => {
   ]
   return (
     <div className="mb-44 flex flex-col justify-center items-center gap-y-10">
+      <TitleText title="Temos diversas atividades físicas e escolinhas" />
       <SlideCoverflow imagensData={imagensData} />
       <Button url="/atividades-fisicas" txtBtn="Atividades" />
     </div>
