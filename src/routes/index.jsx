@@ -13,6 +13,7 @@ import ConselhoDeliberativo from "../pages/ConselhoDeliberativo"
 import NossaHistoria from "../pages/NossaHistoria"
 import ClubeDeCampo from "../pages/ClubeDeCampo"
 import PousadaLitoral from "../pages/PousadaLitoral"
+import NotFoundPage from "../pages/NotFoundPage"
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
 
     // Toas as rotas configuradas aqui são renderizadas no outlet
     children: [
+      {
+        path: "*",
+        element: <NotFoundPage />,
+      },
       {
         path: "/",
         element: <Home />,

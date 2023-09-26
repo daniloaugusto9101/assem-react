@@ -1,8 +1,16 @@
 import React from "react"
+import { useInView } from "react-intersection-observer"
 
 const SectionLocais = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // A animação será disparada apenas uma vez quando o elemento entrar na viewport
+    threshold: 0.1, // Define o limite de visibilidade (0 a 1)
+  })
   return (
-    <section className="mb-44">
+    <section
+      ref={ref}
+      className={`${inView && "animate-slide-toBottom"} mb-44 opacity-0`}
+    >
       <div className="grid bg-secondary-400 -mb-24">
         <div className="h-60 col-span-full row-span-full">
           <img

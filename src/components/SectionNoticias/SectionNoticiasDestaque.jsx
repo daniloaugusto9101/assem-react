@@ -1,15 +1,17 @@
 import React from "react"
 
-const BannerNoticiasDestaque = () => {
+const SectionNoticiasDestaque = () => {
   const [postDestaque, setPostDestaque] = React.useState(null)
   const [thumbnail, setThumbnail] = React.useState(null)
 
+  const getPostDestaque = (url) => {
+    const api = axios.create({
+      baseURL: url,
+    })
+    setPostDestaque(json)
+  }
+
   React.useEffect(() => {
-    async function getPostDestaque(url) {
-      const response = await fetch(url)
-      const json = await response.json()
-      setPostDestaque(json)
-    }
     getPostDestaque(
       `https://assem.com.br/wp-json/wp/v2/posts?categories=8&per_page=1`
     )
@@ -42,4 +44,4 @@ const BannerNoticiasDestaque = () => {
   )
 }
 
-export default BannerNoticiasDestaque
+export default SectionNoticiasDestaque

@@ -1,6 +1,6 @@
 import React from "react"
 import Banner from "../components/Banner/Banner"
-// import BannerNoticias from "../components/BannerNoticias/BannerNoticias"
+import SectionNoticias from "../components/SectionNoticias/SectionNoticias"
 import SlideAtividades from "../components/SlideAtividades/SlideAtividades"
 import SectionLocais from "../components/SectionLocais/SectionLocais"
 import SectionAssociar from "../components/SectionAssociar/SectionAssociar"
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <Banner />
-      {/* <BannerNoticias /> */}
+      {/* <SectionNoticias /> */}
       <SectionAssociar />
       <SectionConvenioMedico />
       <SlideAtividades />

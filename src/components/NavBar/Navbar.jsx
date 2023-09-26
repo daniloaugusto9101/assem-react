@@ -17,7 +17,7 @@ const NavBar = () => {
   }, [location.pathname])
 
   return (
-    <nav className="container m-auto flex justify-between items-center font-thin text-2xl text-ternary-50 px-2 animate-slide-top">
+    <nav className="container m-auto flex justify-between items-center font-thin text-2xl text-ternary-50 px-2">
       <Logo />
       <ul className="hidden md:flex gap-12 ">
         {menuInicio && <MenuLink text="Inicio" url="/" />}

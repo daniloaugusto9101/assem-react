@@ -1,8 +1,13 @@
 import Button from "../Button/Button"
 import SlideCoverflow from "../SlideCoverflow/SlideCoverflow"
 import TitleText from "../TitleText/TitleText"
+import { useInView } from "react-intersection-observer"
 
 const SlideAtividades = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // A animação será disparada apenas uma vez quando o elemento entrar na viewport
+    threshold: 0.1, // Define o limite de visibilidade (0 a 1)
+  })
   const imagensData = [
     {
       url: "/src/assets/img/slideAtividades/atividade1.webp",
@@ -27,7 +32,13 @@ const SlideAtividades = () => {
     },
   ]
   return (
-    <div className="mb-44 flex flex-col justify-center items-center gap-y-10">
+    <div
+      ref={ref}
+      className={`
+      mb-44 flex flex-col justify-center items-center gap-y-10 animate-slide-toBottom opacity-0 ${
+        inView && "animate-slide-toLeft"
+      }`}
+    >
       <div className=" max-w-xl">
         <TitleText title="Temos diversas atividades físicas e escolinhas" />
       </div>

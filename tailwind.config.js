@@ -18,23 +18,28 @@ export default {
         'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
-        slideLeft: {
-          "0%": { transform: "translateX(-20px)", opacity: "0" },
-          "100%": { transform: "initial", opacity: "1" },
-        },
         slideRight: {
-          "0%": { transform: "translateX(20px)", opacity: "0" },
+          "0%": { transform: "translateX(-40px)", opacity: "0" },
           "100%": { transform: "initial", opacity: "1" },
         },
-        slideTop: {
-          "0%": { transform: "translateY(-20px)", opacity: "0" },
+        slideLeft: {
+          "0%": { transform: "translateX(40px)", opacity: "0" },
+          "100%": { transform: "initial", opacity: "1" },
+        },
+        slideLeftModal: {
+          "0%": { transform: "translateX(40px)", opacity: "0" },
+          "100%": { transform: "initial", opacity: "1" },
+        },
+        slideBottom: {
+          "0%": { transform: "translateY(-40px)", opacity: "0" },
           "100%": { transform: "initial", opacity: "1" },
         },
       },
       animation: {
-        "slide-left": "slideLeft 2s forwards",
-        "slide-right": "slideRight 2s forwards",
-        "slide-top": "slideTop 2s forwards",
+        "slide-toLeft": "slideLeft 3s forwards",
+        "slide-toLeftModal": "slideLeftModal 1s forwards",
+        "slide-toRight": "slideRight 3s forwards",
+        "slide-toBottom": "slideBottom 3s forwards",
       },
       colors: {
         primary: {

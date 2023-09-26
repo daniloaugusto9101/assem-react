@@ -1,13 +1,26 @@
 import React from "react"
+import { useInView } from "react-intersection-observer"
 
 const SectionDoubleImg = (props) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // A animação será disparada apenas uma vez quando o elemento entrar na viewport
+    threshold: 0.1, // Define o limite de visibilidade (0 a 1)
+  })
   return (
     <div
-      className={`animate-slide-right flex justify-center items-center  ${
-        props.reserve && "animate-slide-left"
-      }`}
+      ref={ref}
+      className={`flex justify-center items-center opacity-0
+        ${
+          inView
+            ? props.reserve
+              ? "animate-slide-toLeft md:order-1"
+              : "animate-slide-toRight"
+            : ""
+        }
+        }
+      `}
     >
-      <div className=" grid grid-cols-10 grid-rows-6 max-w-sm">
+      <div className="grid grid-cols-10 grid-rows-6 max-w-sm">
         <img
           src={props.img}
           alt=""

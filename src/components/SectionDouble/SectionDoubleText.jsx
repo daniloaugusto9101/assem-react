@@ -1,14 +1,23 @@
 import React from "react"
 import TitleText from "../TitleText/TitleText"
 import Button from "../Button/Button"
+import { useInView } from "react-intersection-observer"
 
 const SectionDoubleText = (props) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // A animação será disparada apenas uma vez quando o elemento entrar na viewport
+    threshold: 0.1, // Define o limite de visibilidade (0 a 1)
+  })
   return (
     <div
-      className={`animate-slide-right flex flex-col items-center justify-center gap-5 text-center md:items-start md:text-left ${
-        props.reserve &&
-        "animate-slide-left md:order-first md:items-end md:text-right"
-      }
+      ref={ref}
+      className={`${
+        inView
+          ? props.reserve
+            ? "animate-slide-toRight md:items-end md:text-right"
+            : "animate-slide-toLeft md:items-start md:text-left"
+          : ""
+      } flex flex-col items-center justify-center gap-5 text-center  
   `}
     >
       <TitleText title={props.title} />

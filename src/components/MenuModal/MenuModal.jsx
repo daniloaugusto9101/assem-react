@@ -1,9 +1,10 @@
 import React from "react"
+import { AiFillCloseCircle } from "react-icons/ai"
 
 const MENU_DATA = [
   {
     title: "Institucional",
-    link: "/institucional",
+    link: "",
     dropDown: [
       {
         title: "Diretoria Executiva",
@@ -63,21 +64,31 @@ const MENU_DATA = [
       },
     ],
   },
+  {
+    title: "Trabalhe Conosco",
+    link: "",
+    dropDown: [
+      {
+        title: "Trabalhe Conosco",
+        link: "/trabalhe-Conosco",
+        dropDown: [],
+      },
+    ],
+  },
 ]
 
 const MenuModal = () => {
   return (
-    <div className="hidden bg-primary-900 top-20 left-0 right-0">
-      <ul className="">
+    <div className="animate-slide-toLeftModal hidden fixed top-0 left-0 w-full h-full bg-primary-900 z-50 overflow-y-scroll text-ternary-50">
+      <AiFillCloseCircle className=" text-5xl absolute right-5 top-5 cursor-pointer" />
+      <ul className=" text-center p-20 sm:grid sm:grid-cols-3 sm:text-left ">
         {MENU_DATA.map((obj, index) => (
-          <li key={index} className="">
-            <a href={obj.link} className="text-xl font-bold uppercase">
-              {obj.title}
-            </a>
+          <li key={index} className="mb-10">
+            <p className="text-xl font-bold uppercase">{obj.title}</p>
             {obj.dropDown.length > 0 ? (
-              <ul className="text-sm">
+              <ul className="text-lg">
                 {obj.dropDown.map((ele, ind) => (
-                  <li key={ind} className=" mt-1">
+                  <li key={ind} className=" mt-1 sm:my-5 sm:ml-3">
                     <a href={ele.link}>{ele.title}</a>
                   </li>
                 ))}

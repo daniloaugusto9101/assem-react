@@ -1,6 +1,6 @@
 import React from "react"
 
-const BannerNoticiasSegundaria = () => {
+const SectionNoticiasSegundaria = () => {
   const [postsSegundarios, setPostsSegundarios] = React.useState(null)
   const [idThumbnail, setIdThumbnail] = React.useState([])
   const [thumbnail, setThumbnail] = React.useState([])
@@ -61,4 +61,4 @@ const BannerNoticiasSegundaria = () => {
   )
 }
 
-export default BannerNoticiasSegundaria
+export default SectionNoticiasSegundaria
