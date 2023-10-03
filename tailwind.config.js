@@ -14,6 +14,10 @@ export default {
       yellow: colors.yellow,
     },
     extend: {
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        'saude': 'repeat(auto-fit,minmax(200px,1fr))',
+      },
       fontFamily: {
         'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
       },
@@ -56,6 +60,7 @@ export default {
           950: '#252646', // Cor mais escura
         },
       },
+      
     },
   },
   plugins: [],
