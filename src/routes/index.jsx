@@ -27,55 +27,55 @@ export const router = createBrowserRouter([
         element: <NotFoundPage />,
       },
       {
-        path: "/",
+        path: "assem-react",
         element: <Home />,
       },
       {
-        path: "/noticias",
+        path: "assem-react/noticias",
         element: <Noticias />,
       },
       {
-        path: "/contatos",
+        path: "assem-react/contatos",
         element: <Contatos />,
       },
       {
-        path: "/fique-socio",
+        path: "assem-react/fique-socio",
         element: <FiqueSocio />,
       },
       {
-        path: "/convenio-medico",
+        path: "assem-react/convenio-medico",
         element: <ConvenioMedico />,
       },
       {
-        path: "/clube-de-desconto",
+        path: "assem-react/clube-de-desconto",
         element: <ClubeDeDesconto />,
       },
       {
-        path: "/clube-de-campo",
+        path: "assem-react/clube-de-campo",
         element: <ClubeDeCampo />,
       },
       {
-        path: "/pousada-litoral",
+        path: "assem-react/pousada-litoral",
         element: <PousadaLitoral />,
       },
       {
-        path: "/atividades-fisicas",
+        path: "assem-react/atividades-fisicas",
         element: <Atividades />,
       },
       {
-        path: "/diretoria-executiva",
+        path: "assem-react/diretoria-executiva",
         element: <DiretoriaExecutiva />,
       },
       {
-        path: "/conselho-fiscal",
+        path: "assem-react/conselho-fiscal",
         element: <ConselhoFiscal />,
       },
       {
-        path: "/conselho-deliberativo",
+        path: "assem-react/conselho-deliberativo",
         element: <ConselhoDeliberativo />,
       },
       {
-        path: "/nossa-historia",
+        path: "assem-react/nossa-historia",
         element: <NossaHistoria />,
       },
     ],

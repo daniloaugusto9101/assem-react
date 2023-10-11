@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Logo = () => {
   return (
     <div className=" p-1 w-14 ">
-      <Link to={"/"}>
+      <Link to={"assem-react"}>
         <img className="block" src={logo} alt="Logo da ASSEM" />
       </Link>
     </div>

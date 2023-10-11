@@ -3,7 +3,7 @@ import React from "react"
 const MENU_SEGUNDARIO_DATA = [
   {
     title: "Notícias",
-    link: "/noticias",
+    link: "/",
     dropDown: [
       {
         title: "Notícias",
@@ -18,58 +18,58 @@ const MENU_SEGUNDARIO_DATA = [
     dropDown: [
       {
         title: "Diretoria Executiva",
-        link: "/diretoria-executiva",
+        link: "assem-react/diretoria-executiva",
         dropDown: [],
       },
       {
         title: "Conselho Fiscal",
-        link: "/conselho-fiscal",
+        link: "assem-react/conselho-fiscal",
         dropDown: [],
       },
       {
         title: "Conselho Deliberativo",
-        link: "/conselho-deliberativo",
+        link: "assem-react/conselho-deliberativo",
         dropDown: [],
       },
       {
         title: "Nossa história",
-        link: "/nossa-historia",
+        link: "assem-react/nossa-historia",
         dropDown: [],
       },
       {
         title: "Estatuto",
-        link: "/estatuto",
+        link: "assem-react/estatuto",
         dropDown: [],
       },
     ],
   },
   {
     title: "Associado",
-    link: "/associado",
+    link: "/",
     dropDown: [
       {
         title: "Convênio Médico",
-        link: "/convenio-medico",
+        link: "assem-react/convenio-medico",
         dropDown: [],
       },
       {
         title: "Clube de Campo",
-        link: "/clube-de-campo",
+        link: "assem-react/clube-de-campo",
         dropDown: [],
       },
       {
         title: "Pousada Litoral",
-        link: "/pousada-litoral",
+        link: "assem-react/pousada-litoral",
         dropDown: [],
       },
       {
         title: "Atividades Físicas",
-        link: "/atividades-fisicas",
+        link: "assem-react/atividades-fisicas",
         dropDown: [],
       },
       {
         title: "Clube de Desconto",
-        link: "/clube-de-desconto",
+        link: "assem-react/clube-de-desconto",
         dropDown: [],
       },
     ],
@@ -80,17 +80,17 @@ const MENU_SEGUNDARIO_DATA = [
     dropDown: [
       {
         title: "Sede",
-        link: "/contatos",
+        link: "assem-react/contatos",
         dropDown: [],
       },
       {
         title: "Clube de Campo",
-        link: "/contatos",
+        link: "assem-react/contatos",
         dropDown: [],
       },
       {
         title: "Pousada Litoral",
-        link: "/contatos",
+        link: "assem-react/contatos",
         dropDown: [],
       },
     ],
