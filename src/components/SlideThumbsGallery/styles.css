@@ -1,0 +1,33 @@
+.mySwiper {
+  height: 400px;
+  background-color: black;
+}
+
+.mySwiper img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mySwiper2 {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper2 swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+

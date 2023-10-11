@@ -17,6 +17,7 @@ export default {
       gridTemplateColumns: {
         // Simple 16 column grid
         'saude': 'repeat(auto-fit,minmax(200px,1fr))',
+        'list': 'repeat(auto-fit,minmax(350px,1fr))',
       },
       fontFamily: {
         'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
