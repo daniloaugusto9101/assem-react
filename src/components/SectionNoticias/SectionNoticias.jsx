@@ -8,7 +8,7 @@ const SectionNoticias = () => {
     <section className="max-w-5xl m-auto mb-44">
       <div className="grid gap-2 md:grid-cols-3 ">
         <SectionNoticiasDestaque />
-        <SectionNoticiasSegundaria />
+        {/* <SectionNoticiasSegundaria /> */}
       </div>
       <Link
         to="/noticias"

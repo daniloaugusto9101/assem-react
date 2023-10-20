@@ -1,47 +1,31 @@
 import React from "react"
+import PostService from "../../services/PostService"
 
 const SectionNoticiasDestaque = () => {
-  const [postDestaque, setPostDestaque] = React.useState(null)
+  const [mainPost, setMainPost] = React.useState(null)
   const [thumbnail, setThumbnail] = React.useState(null)
 
-  const getPostDestaque = (url) => {
-    const api = axios.create({
-      baseURL: url,
-    })
-    setPostDestaque(json)
-  }
-
   React.useEffect(() => {
-    getPostDestaque(
-      `https://assem.com.br/wp-json/wp/v2/posts?categories=8&per_page=1`
-    )
+    PostService.getPosts(8).then(({ data }) => setMainPost(data[0]))
   }, [])
 
   React.useEffect(() => {
-    if (!postDestaque) {
-      return // Aguarde até que postDestaque tenha valor antes de continuar
-    }
-    async function getThumbnail(url) {
-      const response = await fetch(url)
-      const json = await response.json()
-      setThumbnail(json.guid.rendered)
-    }
-    getThumbnail(
-      `https://assem.com.br/wp-json/wp/v2/media/${postDestaque[0].acf.thumbnail_materia}`
-    )
-  }, [postDestaque])
+    // PostService.getPostsThumbnails().then((data) => setThumbnail(data))
+    PostService.getPostsThumbnails().then((data) => console.log(data))
+  }, [])
+  // thumbnail && console.log(thumbnail)
 
-  if (thumbnail === null) return null
-  return (
-    <div className="bg-ternary-200 mb-3 md:mb-0 md:row-span-2 md:col-span-2">
-      <a href={postDestaque[0].link}>
-        <img src={thumbnail} />
-        <h2 className="text-3xl p-2 text-primary-900">
-          {postDestaque[0].title.rendered}
-        </h2>
-      </a>
-    </div>
-  )
+  if (mainPost)
+    return (
+      <div className="bg-ternary-200 mb-3 md:mb-0 md:row-span-2 md:col-span-2">
+        <a href={mainPost.link}>
+          {/* <img src={Thumbnail} /> */}
+          <h2 className="text-3xl p-2 text-primary-900">
+            {mainPost.title.rendered}
+          </h2>
+        </a>
+      </div>
+    )
 }
 
 export default SectionNoticiasDestaque
