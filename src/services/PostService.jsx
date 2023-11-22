@@ -1,44 +1,39 @@
 import { api } from "../config/http"
 
-const getPosts = (idCategory = 1, perPage = 1) => {
-  return api.get(`posts?categories=${idCategory}&per_page=${perPage}`)
+const getPosts = async (idCategory = 1, perPage = 1) => {
+  const response = await api.get(
+    `posts?categories=${idCategory}&per_page=${perPage}`
+  )
+  return response.data
 }
 
-const getIdThumbnail = (
+const getIdsThumbnails = async (
   idCategory = 1,
-  perPage = 2,
+  perPage = 1,
   nameField = "acf.thumbnail_materia"
 ) => {
-  return api.get(
+  const response = await api.get(
     `posts?categories=${idCategory}&per_page=${perPage}&_fields=${nameField}`
   )
+  return response.data
 }
 
-const getPostsThumbnails = (
-  idCategory = 1,
-  perPage = 2,
-  nameField = "acf.thumbnail_materia"
-) => {
-  const options = {
-    params: {
-      categories: idCategory,
-      per_page: perPage,
-      _fields: nameField,
-    },
-  }
-  api.get(`posts?`, options).then((resp1) => {
-    const data1 = resp1.data
+const getMediaThumbnails = async (id) => {
+  const response = await api.get(`media?include=${id}`)
+  return response.data
+}
 
-    data1.map(resp => {
-      
-    })
-
-    api.get(`media?`)
-    console.log(data1)
-  })
+const getThumbnails = async (idCategory, perPage) => {
+  const firstData = await getIdsThumbnails(idCategory, perPage)
+  const thumbnailIds = firstData
+    .map((obj) => obj.acf.thumbnail_materia)
+    .join(",")
+  const secondData = await getMediaThumbnails(thumbnailIds)
+  return secondData
 }
 
 export default {
   getPosts,
-  getPostsThumbnails,
+  getThumbnails,
+  getMediaThumbnails,
 }
