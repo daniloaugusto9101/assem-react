@@ -7,7 +7,7 @@ const MENU_SEGUNDARIO_DATA = [
     dropDown: [
       {
         title: "Notícias",
-        link: "/assem-react/noticias",
+        link: "/assem-react/blog-noticias",
         dropDown: [],
       },
     ],

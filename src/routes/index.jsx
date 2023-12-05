@@ -3,7 +3,6 @@ import RootLayout from "../layout/RootLayout"
 import Home from "../pages/Home"
 import Contatos from "../pages/Contatos"
 import FiqueSocio from "../pages/FiqueSocio"
-import Noticias from "../pages/Noticias"
 import ConvenioMedico from "../pages/ConvenioMedico"
 import ClubeDeDesconto from "../pages/CLubeDeDesconto"
 import Atividades from "../pages/Atividades"
@@ -14,6 +13,7 @@ import NossaHistoria from "../pages/NossaHistoria"
 import ClubeDeCampo from "../pages/ClubeDeCampo"
 import PousadaLitoral from "../pages/PousadaLitoral"
 import NotFoundPage from "../pages/NotFoundPage"
+import BlogNoticias from "../pages/BlogNoticias"
 
 export const router = createBrowserRouter([
   {
@@ -31,8 +31,8 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "assem-react/noticias",
-        element: <Noticias />,
+        path: "assem-react/blog-noticias",
+        element: <BlogNoticias />,
       },
       {
         path: "assem-react/contatos",

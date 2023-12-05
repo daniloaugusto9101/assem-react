@@ -2,26 +2,22 @@ import React from "react"
 import PostService from "../services/PostService"
 
 function useFetchPost(idCategory = 1, perPage = 1) {
-  const [mainPost, setMainPost] = React.useState(null)
-  const [thumbnail, setThumbnail] = React.useState(null)
+  const [post, setPost] = React.useState([])
+  const [thumbnail, setThumbnail] = React.useState([])
 
   React.useEffect(() => {
-    const fecthPost = async () => {
-      const data = await PostService.getPosts(idCategory, perPage)
-      setMainPost(data)
-    }
-    fecthPost()
-  }, [])
+    Promise.all([
+      PostService.getPosts(idCategory, perPage),
+      PostService.getThumbnails(idCategory, perPage),
+    ])
+      .then(([postData, thumbnailData]) => {
+        setPost(postData)
+        setThumbnail(thumbnailData)
+      })
+      .catch((error) => console.error(error))
+  }, [idCategory, perPage])
 
-  React.useEffect(() => {
-    const fecthThumbnail = async () => {
-      const data = await PostService.getThumbnails(idCategory, perPage)
-      setThumbnail(data)
-    }
-    fecthThumbnail()
-  }, [])
-
-  return { mainPost, thumbnail }
+  return { post, thumbnail }
 }
 
 export default useFetchPost

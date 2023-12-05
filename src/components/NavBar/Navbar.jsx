@@ -21,7 +21,7 @@ const NavBar = () => {
       <Logo />
       <ul className="hidden md:flex gap-12 ">
         {menuInicio && <MenuLink text="Inicio" url="/assem-react" />}
-        <MenuLink text="Notícias" url="assem-react/noticias" />
+        <MenuLink text="Notícias" url="assem-react/blog-noticias" />
         <MenuLink text="ASSEM" url={location.pathname} />
         <MenuLink text="Contatos" url="assem-react/contatos" />
       </ul>
