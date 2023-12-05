@@ -1,6 +1,6 @@
 const SectionDoubleSimple = (props) => {
   return (
-    <div className="mb-40 px-5 grid gap-10 md:grid-cols-2 md:items-center">
+    <div className=" px-5 grid gap-10 md:grid-cols-2 md:items-center">
       <div className={`h-72 ${props.reverse && "md:order-last"}`}>
         <img src={props.img} className="block w-full h-full object-cover" />
       </div>
