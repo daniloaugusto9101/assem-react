@@ -6,7 +6,7 @@ import urlPdf from "@assets/file/catalago-operadoras.pdf"
 const SectionOperadorasPlanos = () => {
   const OPERADORAS_LIST = [
     {
-      url: "../../src/assets/page-convenios/logo-emercor.webp",
+      url: "../../src/assets/page-convenios/logo-policlin.webp",
     },
     {
       url: "../../src/assets/img/page-convenios/logo-emercor.webp",
