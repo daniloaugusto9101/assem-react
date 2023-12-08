@@ -1,26 +1,37 @@
 import { api } from "../config/http"
 
 const getPosts = async (idCategory = 1, perPage = 1) => {
-  const response = await api.get(
-    `posts?categories=${idCategory}&per_page=${perPage}`
-  )
-  return response.data
+  const recurso = "posts?"
+  const params = {
+    categories: idCategory,
+    per_page: perPage,
+  }
+  const { data } = await api.get(`${recurso}`, { params })
+  return data
 }
 
 const getIdsThumbnails = async (
   idCategory = 1,
   perPage = 1,
-  nameField = "acf.thumbnail_materia"
+  fields = "acf.thumbnail_materia"
 ) => {
-  const response = await api.get(
-    `posts?categories=${idCategory}&per_page=${perPage}&_fields=${nameField}`
-  )
-  return response.data
+  const recurso = "posts?"
+  const params = {
+    categories: idCategory,
+    per_page: perPage,
+    _fields: fields,
+  }
+  const { data } = await api.get(`${recurso}`, { params })
+  return data
 }
 
 const getMediaThumbnails = async (id) => {
-  const response = await api.get(`media?include=${id}`)
-  return response.data
+  const recurso = "media?"
+  const params = {
+    include: id,
+  }
+  const { data } = await api.get(`${recurso}`, { params })
+  return data
 }
 
 const getThumbnails = async (idCategory, perPage) => {
@@ -35,5 +46,4 @@ const getThumbnails = async (idCategory, perPage) => {
 export default {
   getPosts,
   getThumbnails,
-  getMediaThumbnails,
 }
