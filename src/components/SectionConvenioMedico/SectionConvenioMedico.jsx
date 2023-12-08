@@ -1,4 +1,3 @@
-import React from "react"
 import SectionDouble from "../SectionDouble/SectionDouble"
 import imgConvenio from "../../assets/img/sectionConvenioMedico/convenio2.webp"
 

@@ -1,4 +1,3 @@
-import React from "react"
 import Banner from "../components/Banner/Banner"
 import SectionNoticias from "../components/SectionNoticias/SectionNoticias"
 import SlideAtividades from "../components/SlideAtividades/SlideAtividades"

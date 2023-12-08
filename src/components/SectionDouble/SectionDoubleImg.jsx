@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer"
 const SectionDoubleImg = (props) => {
   const [ref, inView] = useInView({
     triggerOnce: true, // A animação será disparada apenas uma vez quando o elemento entrar na viewport
-    threshold: 0.1, // Define o limite de visibilidade (0 a 1)
+    threshold: 0.0, // Define o limite de visibilidade (0 a 1)
   })
   return (
     <div
