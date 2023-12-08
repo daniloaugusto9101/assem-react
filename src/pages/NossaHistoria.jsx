@@ -1,6 +1,6 @@
 import React from "react"
-import TitleText from "../components/TitleText/TitleText"
-import SectionDoubleXadrez from "../components/SectionDoubleXadrez/SectionDoubleXadrez"
+import TitleText from "@components/TitleText/TitleText"
+import SectionDoubleXadrez from "@components/SectionDoubleXadrez/SectionDoubleXadrez"
 
 const NossaHistoria = () => {
   const nossaHistoriaList = [

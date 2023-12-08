@@ -1,6 +1,6 @@
 import React from "react"
 import SectionDouble from "../SectionDouble/SectionDouble"
-import imgCompras from "../../assets/img/sectionClubeDesconto/compras.webp"
+import imgCompras from "@assets/img/sectionClubeDesconto/compras.webp"
 
 const SectionClubeDesconto = () => {
   const CLUBE_DESCONTO_DATA = {

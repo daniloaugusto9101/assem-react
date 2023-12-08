@@ -1,5 +1,5 @@
 import SectionDouble from "../SectionDouble/SectionDouble"
-import imgConvenio from "../../assets/img/sectionConvenioMedico/convenio2.webp"
+import imgConvenio from "@assets/img/sectionConvenioMedico/convenio2.webp"
 
 const CONVENIO_DATA = {
   title: "Convênios médicos",

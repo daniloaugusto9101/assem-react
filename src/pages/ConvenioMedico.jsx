@@ -1,9 +1,9 @@
 import React from "react"
-import HeaderImg from "../components/HeaderImg/HeaderImg"
-import SectionDoubleSimple from "../components/SectionDoubleSimple"
-import SectionOperadorasPlanos from "../components/SectionOperadorasPlanos"
-import TitleSimple from "../components/TitleSimple"
-import ParagrapList from "../components/ParagrapList"
+import HeaderImg from "@components/HeaderImg/HeaderImg"
+import SectionDoubleSimple from "@components/SectionDoubleSimple"
+import SectionOperadorasPlanos from "@components/SectionOperadorasPlanos"
+import TitleSimple from "@components/TitleSimple"
+import ParagrapList from "@components/ParagrapList"
 
 const CONVENIO_MEDICO_DATA = [
   {

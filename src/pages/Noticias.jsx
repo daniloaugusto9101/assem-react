@@ -1,6 +1,6 @@
 import React from "react"
-import AdsenseBanner from "../components/adsenseBanner"
-import AdsenseSidebar from "../components/AdsenseSidebar"
+import AdsenseBanner from "@components/adsenseBanner"
+import AdsenseSidebar from "@components/AdsenseSidebar"
 
 const Noticias = () => {
   return (

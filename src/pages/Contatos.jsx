@@ -1,6 +1,6 @@
 import React from "react"
-import TitleText from "../components/TitleText/TitleText"
-import ContatosItem from "../components/ContatosItem"
+import TitleText from "@components/TitleText/TitleText"
+import ContatosItem from "@components/ContatosItem"
 
 const CONTATOS = [
   {

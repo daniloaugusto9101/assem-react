@@ -1,5 +1,3 @@
-import React from "react"
-
 const DiretoriaItem = ({ diretor }) => {
   return (
     <div className="grid grid-cols-5 xl:grid-cols-4 gap-2 text-ternary-600 items-center">

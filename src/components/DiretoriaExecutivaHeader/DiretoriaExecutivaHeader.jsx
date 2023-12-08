@@ -1,10 +1,10 @@
-import React from "react"
+import url from "@assets/img/page-executiva/roberto.webp"
 
 const DiretoriaExecutivaHeader = () => {
   return (
     <div className="mt-10 grid lg:grid-cols-4 gap-8 items-center ">
       <img
-        src="https://assem.com.br/wp-content/themes/site-assem/assets/img/page-executiva/roberto.webp"
+        src={url}
         className="bg-primary-700 justify-self-center shadow-[10px_10px_13px_-9px_rgba(0,0,0,0.8)] lg:col-span-1"
       />
 

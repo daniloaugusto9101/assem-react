@@ -1,11 +1,12 @@
 import React from "react"
 import TitleSimple from "../TitleSimple"
 import ButtonV2 from "../ButtonV2/Button"
+import urlPdf from "@assets/file/catalago-operadoras.pdf"
 
 const SectionOperadorasPlanos = () => {
   const OPERADORAS_LIST = [
     {
-      url: "../../src/assets/img/page-convenios/logo-aussel.webp",
+      url: "../../src/assets/page-convenios/logo-emercor.webp",
     },
     {
       url: "../../src/assets/img/page-convenios/logo-emercor.webp",
@@ -23,6 +24,8 @@ const SectionOperadorasPlanos = () => {
 
   return (
     <div className="px-2 py-10 mb-40 bg-ternary-300">
+      <p>Texto</p>
+
       <TitleSimple title="Operadoras de planos de sáude" />
       <div className="mb-20 grid grid-cols-saude gap-3 auto-rows-[_100px]">
         {OPERADORAS_LIST.map(({ url }, i) => (
@@ -32,10 +35,7 @@ const SectionOperadorasPlanos = () => {
         ))}
       </div>
       <div className="flex justify-center">
-        <ButtonV2
-          txtBtn="Catálago de Planos"
-          url="../../src/assets/file/catalago-operadoras.pdf"
-        />
+        <ButtonV2 txtBtn="Catálago de Planos" url={urlPdf} />
       </div>
     </div>
   )

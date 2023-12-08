@@ -1,10 +1,9 @@
-import React from "react"
-import TitleSimple from "../components/TitleSimple"
-import SlideThumbsGallery from "../components/SlideThumbsGallery"
-import SectionDoubleSimple from "../components/SectionDoubleSimple"
-import ParagrapListIco from "../components/ParagrapListIco"
-import CLUB_LIST from "../components/ClubList/ClubList"
-import CLUBE_LIST_IMG from "../components/ClubListImg/"
+import TitleSimple from "@components/TitleSimple"
+import SlideThumbsGallery from "@components/SlideThumbsGallery"
+import SectionDoubleSimple from "@components/SectionDoubleSimple"
+import ParagrapListIco from "@components/ParagrapListIco"
+import CLUB_LIST from "@components/ClubList/ClubList"
+import CLUBE_LIST_IMG from "@components/ClubListImg/"
 
 const CLUBE_DATA = [
   {

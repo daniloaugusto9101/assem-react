@@ -1,10 +1,10 @@
 import React from "react"
-import TitleSimple from "../components/TitleSimple"
-import SlideThumbsGallery from "../components/SlideThumbsGallery"
-import SectionDoubleSimple from "../components/SectionDoubleSimple"
-import POUSADA_LIST_IMG from "../components/PousadaListImg/"
-import POUSADA_LIST_PARAGRAPH from "../components/PousadaListParagraph/"
-import ParagrapListIco from "../components/ParagrapListIco"
+import TitleSimple from "@components/TitleSimple"
+import SlideThumbsGallery from "@components/SlideThumbsGallery"
+import SectionDoubleSimple from "@components/SectionDoubleSimple"
+import POUSADA_LIST_IMG from "@components/PousadaListImg/"
+import POUSADA_LIST_PARAGRAPH from "@components/PousadaListParagraph/"
+import ParagrapListIco from "@components/ParagrapListIco"
 
 const POUSADA_DATA = [
   {

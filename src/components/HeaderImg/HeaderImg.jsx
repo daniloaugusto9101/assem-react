@@ -1,5 +1,3 @@
-import React from "react"
-
 const HeaderImg = (props) => {
   return (
     <div className="relative mb-40">

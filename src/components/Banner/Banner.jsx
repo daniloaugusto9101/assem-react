@@ -1,5 +1,4 @@
-import React from "react"
-import Video from "../../assets/video/banner.mp4"
+import url from "@/assets/video/banner.mp4"
 
 const Banner = () => {
   return (
@@ -12,7 +11,7 @@ const Banner = () => {
         loop
         muted
       >
-        <source src={Video} type="video/mp4" />
+        <source src={url} type="video/mp4" />
         Seu navegador não suporta a reprodução de vídeos.
       </video>
     </div>

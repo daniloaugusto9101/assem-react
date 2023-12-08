@@ -1,9 +1,9 @@
 import React from "react"
-import SectionDoubleSimple from "../components/SectionDoubleSimple"
-import ParagrapList from "../components/ParagrapList"
-import TitleSimple from "../components/TitleSimple"
-import CardDouble from "../components/CardDouble"
-import CardVideo from "../components/CardVideo"
+import SectionDoubleSimple from "@components/SectionDoubleSimple"
+import ParagrapList from "@components/ParagrapList"
+import TitleSimple from "@components/TitleSimple"
+import CardDouble from "@components/CardDouble"
+import CardVideo from "@components/CardVideo"
 
 const FiqueSocio = () => {
   const DATA_FIQUE_SOCIO = [

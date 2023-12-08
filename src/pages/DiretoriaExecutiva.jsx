@@ -1,7 +1,7 @@
 import React from "react"
-import TitleText from "../components/TitleText/TitleText"
-import DiretoriaExecutivaHeader from "../components/DiretoriaExecutivaHeader/DiretoriaExecutivaHeader"
-import DiretoriaList from "../components/DiretoriaList/DiretoriaList"
+import TitleText from "@components/TitleText/TitleText"
+import DiretoriaExecutivaHeader from "@components/DiretoriaExecutivaHeader/DiretoriaExecutivaHeader"
+import DiretoriaList from "@components/DiretoriaList/DiretoriaList"
 
 const diretoriaExecutivaList = [
   {

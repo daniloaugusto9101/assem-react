@@ -1,5 +1,5 @@
 import React from "react"
-import Img1 from "../../../assets/test.png"
+import Img1 from "@assets/test.png"
 
 const SlideFadeIn = () => {
   return (

@@ -1,5 +1,5 @@
 import SectionDouble from "../SectionDouble/SectionDouble"
-import imgAssociar from "../../assets/img/sectionAssociar/associar.webp"
+import imgAssociar from "@assets/img/sectionAssociar/associar.webp"
 
 const ASSOCIAR_DATA = {
   title: "Por que me associar?",

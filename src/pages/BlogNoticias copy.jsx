@@ -1,5 +1,5 @@
-import PostBlogNoticias from "../components/Posts/PostBlogNoticias"
-import TitleText from "../components/TitleText/TitleText"
+import PostBlogNoticias from "@components/Posts/PostBlogNoticias"
+import TitleText from "@components/TitleText/TitleText"
 import useFetchPost from "../hooks/useFetchPost"
 
 const BlogNoticias = () => {

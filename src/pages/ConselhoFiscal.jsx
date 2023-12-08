@@ -1,6 +1,6 @@
 import React from "react"
-import TitleText from "../components/TitleText/TitleText"
-import DiretoriaList from "../components/DiretoriaList/DiretoriaList"
+import TitleText from "@components/TitleText/TitleText"
+import DiretoriaList from "@components/DiretoriaList/DiretoriaList"
 
 const conselhoFiscalList = [
   {
