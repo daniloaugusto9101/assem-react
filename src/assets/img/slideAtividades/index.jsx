@@ -1,0 +1,7 @@
+export { default as img1 } from "./atividade1.webp"
+export { default as img2 } from "./atividade2.webp"
+export { default as img3 } from "./atividade3.webp"
+export { default as img4 } from "./atividade4.webp"
+export { default as img5 } from "./atividade5.webp"
+export { default as img6 } from "./atividade6.webp"
+export { default as img7 } from "./atividade7.webp"

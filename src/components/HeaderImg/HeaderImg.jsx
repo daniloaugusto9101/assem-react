@@ -1,6 +1,6 @@
 const HeaderImg = (props) => {
   return (
-    <div className="relative mb-40">
+    <div className="relative">
       <div className="md:h-96">
         <img src={props.img} className="block w-full h-full object-cover" />
       </div>

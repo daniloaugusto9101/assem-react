@@ -2,6 +2,7 @@ import Button from "../Button/Button"
 import SlideCoverflow from "../SlideCoverflow/SlideCoverflow"
 import TitleText from "../TitleText/TitleText"
 import { useInView } from "react-intersection-observer"
+import * as url from "@assets/img/slideAtividades/"
 
 const SlideAtividades = () => {
   const [ref, inView] = useInView({
@@ -10,25 +11,25 @@ const SlideAtividades = () => {
   })
   const imagensData = [
     {
-      url: "/src/assets/img/slideAtividades/atividade1.webp",
+      url: url.img1,
     },
     {
-      url: "/src/assets/img/slideAtividades/atividade2.webp",
+      url: url.img2,
     },
     {
-      url: "/src/assets/img/slideAtividades/atividade3.webp",
+      url: url.img3,
     },
     {
-      url: "/src/assets/img/slideAtividades/atividade4.webp",
+      url: url.img4,
     },
     {
-      url: "/src/assets/img/slideAtividades/atividade5.webp",
+      url: url.img5,
     },
     {
-      url: "/src/assets/img/slideAtividades/atividade6.webp",
+      url: url.img6,
     },
     {
-      url: "/src/assets/img/slideAtividades/atividade7.webp",
+      url: url.img7,
     },
   ]
   return (

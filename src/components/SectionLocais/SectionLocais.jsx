@@ -1,5 +1,8 @@
 import React from "react"
 import { useInView } from "react-intersection-observer"
+import impSede from "@assets/img/sectionLocais/sede.webp"
+import impPousada from "@assets/img/sectionLocais/pousada.webp"
+import impClube from "@assets/img/sectionLocais/clube.webp"
 
 const SectionLocais = () => {
   const [ref, inView] = useInView({
@@ -15,7 +18,7 @@ const SectionLocais = () => {
         <div className="h-60 col-span-full row-span-full">
           <img
             className="block w-full h-full object-cover"
-            src="/src/assets/img/sectionLocais/sede.webp"
+            src={impSede}
             alt=""
           />
         </div>
@@ -29,7 +32,7 @@ const SectionLocais = () => {
         <div className="mb-32 md:mb-0">
           <img
             className="block w-full h-full object-cover"
-            src="/src/assets/img/sectionLocais/pousada.webp"
+            src={impPousada}
             alt=""
           />
           <p className="text-3xl text-center mt-3">Pousada Litoral</p>
@@ -37,7 +40,7 @@ const SectionLocais = () => {
         <div className="mb-32 md:mb-0">
           <img
             className="block w-full h-full object-cover"
-            src="/src/assets/img/sectionLocais/sede.webp"
+            src={impSede}
             alt=""
           />
           <p className="text-3xl text-center mt-3">Sede</p>
@@ -45,7 +48,7 @@ const SectionLocais = () => {
         <div className="mb-20 md:mb-0">
           <img
             className="block w-full h-full object-cover"
-            src="/src/assets/img/sectionLocais/clube.webp"
+            src={impClube}
             alt=""
           />
           <p className="text-3xl text-center mt-3">Clube de Campo</p>

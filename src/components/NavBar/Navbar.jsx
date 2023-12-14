@@ -23,7 +23,7 @@ const NavBar = () => {
         {menuInicio && <MenuLink text="Inicio" url="/assem-react" />}
         <MenuLink text="Notícias" url="assem-react/blog-noticias" />
         <MenuLink text="ASSEM" url={location.pathname} />
-        <MenuLink text="Contatos" url="assem-react/contatos" />
+        <MenuLink text="Contatos" url="./contatos" />
       </ul>
       <MenuLink text="Fique Sócio" url="assem-react/fique-socio" />
       <GiHamburgerMenu className="block md:hidden text-4xl" />

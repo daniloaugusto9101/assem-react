@@ -2,29 +2,29 @@ import React from "react"
 import TitleText from "@components/TitleText/TitleText"
 import DiretoriaExecutivaHeader from "@components/DiretoriaExecutivaHeader/DiretoriaExecutivaHeader"
 import DiretoriaList from "@components/DiretoriaList/DiretoriaList"
+import * as url from "@assets/img/page-executiva/"
 
 const diretoriaExecutivaList = [
   {
     title: "Diretoria",
     diretores: [
       {
-        img: "../../src/assets/img/page-executiva/1-secretaria.webp",
+        img: url.img1,
         nome: "Eliane Milanez da Cunha",
         cargo: "1ª Secretária",
       },
       {
-        img: "../../src/assets/img/page-executiva/2-secretaria.webp",
+        img: url.img3,
         nome: "Fátima Regina da Silva",
         cargo: "2ª Secretária",
       },
       {
-        img: "../../src/assets/img/page-executiva/1-tesoureiro.webp",
+        img: url.img2,
         nome: "Benedito Sérgio Teixeira",
         cargo: "1ª Tesoureiro",
       },
       {
-        img: "../../src/assets/img/page-executiva/2-tesoureiro.webp",
-        nome: "Flávio Carlos dos Santos",
+        img: url.img4,
         cargo: "2ª Tesoureiro",
       },
     ],
@@ -33,42 +33,40 @@ const diretoriaExecutivaList = [
     title: "Departamentos",
     diretores: [
       {
-        img: "../../src/assets/img/page-executiva/dp-social.webp",
+        img: url.img11,
         nome: "Silvia Maria Tegão Alcalde Leite",
         cargo: "Departamento Social/Cultural",
       },
       {
-        img: "../../src/assets/img/page-executiva/dp-social2.webp",
-        nome: "Maria Aparecida de Souza Teixeira",
+        img: url.img12,
         cargo: "Departamento Social/Cultural (Adjunto)",
       },
       {
-        img: "../../src/assets/img/page-executiva/dp-fisicas.webp",
+        img: url.img8,
         nome: "José Valter de Andrade",
         cargo: "Departamento de Atividades Físicas",
       },
       {
-        img: "../../src/assets/img/page-executiva/dp-informatica.webp",
+        img: url.img9,
         nome: "Ricardo de Oliveira Bruni",
         cargo: "Departamento de Informática",
       },
       {
-        img: "../../src/assets/img/page-executiva/dp-esportes.webp",
+        img: url.img7,
         nome: "Nilton Marcos Pires",
         cargo: "Departamento de Esportes e Competições",
       },
       {
-        img: "../../src/assets/img/page-executiva/dp-parcerias.webp",
+        img: url.img14,
         nome: "Daniel José de Siqueira",
         cargo: "Departamento do Clube de Campo/ Parcerias",
       },
       {
-        img: "../../src/assets/img/page-executiva/dp-compras.webp",
-        nome: "José Rubens Cardoso de Morais",
+        img: url.img6,
         cargo: "Departamento de Compras",
       },
       {
-        img: "../../src/assets/img/page-executiva/dp-pousada.webp",
+        img: url.img10,
         nome: "Waldery Teixeira",
         cargo: "Departamento da Pousada ASSEM Litoral",
       },
