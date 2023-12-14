@@ -11,7 +11,7 @@ const SectionNoticias = () => {
         <SectionNoticiasSegundaria />
       </div>
       <Link
-        to="/noticias"
+        to="./blog-noticias"
         className="md:text-right text-2xl block text-secondary-700 mt-10 hover:font-bold"
       >
         Mais notícias...

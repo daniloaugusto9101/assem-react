@@ -1,6 +1,5 @@
-import React from "react"
-import MenuSegundarioList from "../MenuSegundarioList/MenuSegundarioList"
-import RedesSociaais from "../RedesSociais/RedesSociais"
+import MenuSegundarioList from "@components/MenuSegundarioList/MenuSegundarioList"
+import RedesSociaais from "@components/RedesSociais/RedesSociais"
 
 const Footer = () => {
   return (

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 const MENU_SEGUNDARIO_DATA = [
   {
@@ -108,7 +109,7 @@ const MenuSegundarioList = () => {
               <ul className="text-sm">
                 {obj.dropDown.map((ele, ind) => (
                   <li key={ind} className=" mt-1">
-                    <a href={ele.link}>{ele.title}</a>
+                    <Link to={ele.link}>{ele.title}</Link>
                   </li>
                 ))}
               </ul>
