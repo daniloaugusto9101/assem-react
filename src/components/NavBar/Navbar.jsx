@@ -20,7 +20,7 @@ const NavBar = () => {
     <nav className="container m-auto flex justify-between items-center font-thin text-2xl text-ternary-50 px-2">
       <Logo />
       <ul className="hidden md:flex gap-12 ">
-        {menuInicio && <MenuLink text="Inicio" url="/assem-react" />}
+        {menuInicio && <MenuLink text="Inicio" url="/assem-react/" />}
         <MenuLink text="Notícias" url="assem-react/blog-noticias" />
         <MenuLink text="ASSEM" url={location.pathname} />
         <MenuLink text="Contatos" url="./contatos" />

@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header
       className={` w-full py-4 z-50 top-0 absolute  ${
-        pathname !== "/assem-react" && "relative bg-primary-900"
+        pathname !== "/assem-react/" && "relative bg-primary-900"
       }`}
     >
       <Navbar />

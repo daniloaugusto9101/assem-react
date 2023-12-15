@@ -27,7 +27,7 @@ export const router = createBrowserRouter([
         element: <NotFoundPage />,
       },
       {
-        path: "assem-react",
+        path: "assem-react/",
         element: <Home />,
       },
       {
