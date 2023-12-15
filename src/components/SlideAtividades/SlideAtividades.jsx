@@ -44,7 +44,7 @@ const SlideAtividades = () => {
         <TitleText title="Temos diversas atividades físicas e escolinhas" />
       </div>
       <SlideCoverflow imagensData={imagensData} />
-      <Button url="/atividades-fisicas" txtBtn="Saiba mais" />
+      <Button url="./atividades-fisicas" txtBtn="Saiba mais" />
     </div>
   )
 }

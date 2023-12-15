@@ -7,7 +7,7 @@ const CONVENIO_DATA = {
   txtBtn: "Saiba mais",
   img: imgConvenio,
   reserve: true,
-  url: "/convenio-medico",
+  url: "./convenio-medico",
 }
 
 const SectionConvenioMedico = () => {

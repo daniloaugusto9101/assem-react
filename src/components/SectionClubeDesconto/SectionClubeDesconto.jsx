@@ -9,7 +9,7 @@ const SectionClubeDesconto = () => {
     txtBtn: "Saiba mais",
     img: imgCompras,
     reserve: false,
-    url: "/clube-de-desconto",
+    url: "./clube-de-desconto",
   }
   return <SectionDouble {...CLUBE_DESCONTO_DATA} />
 }
