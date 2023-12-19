@@ -13,5 +13,5 @@ export default defineConfig({
     }
   },
   plugins: [react()],
-  base: '/assem-react2',
+  base: '/assem-react',
 })
