@@ -55,7 +55,7 @@ export const router = createBrowserRouter([
         element: <ClubeDeCampo />,
       },
       {
-        path: "assem-react/pousada-litoral",
+        path: "/assem-react/pousada-litoral",
         element: <PousadaLitoral />,
       },
       {
@@ -63,19 +63,19 @@ export const router = createBrowserRouter([
         element: <Atividades />,
       },
       {
-        path: "assem-react/diretoria-executiva",
+        path: "/assem-react/diretoria-executiva",
         element: <DiretoriaExecutiva />,
       },
       {
-        path: "assem-react/conselho-fiscal",
+        path: "/assem-react/conselho-fiscal",
         element: <ConselhoFiscal />,
       },
       {
-        path: "assem-react/conselho-deliberativo",
+        path: "/assem-react/conselho-deliberativo",
         element: <ConselhoDeliberativo />,
       },
       {
-        path: "assem-react/nossa-historia",
+        path: "/assem-react/nossa-historia",
         element: <NossaHistoria />,
       },
     ],
