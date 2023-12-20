@@ -3,7 +3,6 @@ import DiretorItem from "../DiretoriaItem/DiretoriaItem"
 import TitleUnderline from "../TitleUnderline/TitleUnderline"
 
 const DiretoriaList = ({ diretoria }) => {
-  console.log(diretoria)
   return (
     <div className="mt-20">
       {diretoria.map((obj, id) => (

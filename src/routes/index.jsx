@@ -17,7 +17,7 @@ import BlogNoticias from "@pages/BlogNoticias"
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/assem-react/",
     element: <RootLayout />, //rota base da aplicação
 
     // Toas as rotas configuradas aqui são renderizadas no outlet
@@ -27,31 +27,31 @@ export const router = createBrowserRouter([
         element: <NotFoundPage />,
       },
       {
-        path: "assem-react/",
+        path: "/assem-react/",
         element: <Home />,
       },
       {
-        path: "assem-react/blog-noticias",
+        path: "/assem-react/blog-noticias",
         element: <BlogNoticias />,
       },
       {
-        path: "assem-react/contatos",
+        path: "/assem-react/contatos",
         element: <Contatos />,
       },
       {
-        path: "assem-react/fique-socio",
+        path: "/assem-react/fique-socio",
         element: <FiqueSocio />,
       },
       {
-        path: "assem-react/convenio-medico",
+        path: "/assem-react/convenio-medico",
         element: <ConvenioMedico />,
       },
       {
-        path: "assem-react/clube-de-desconto",
+        path: "/assem-react/clube-de-desconto",
         element: <ClubeDeDesconto />,
       },
       {
-        path: "assem-react/clube-de-campo",
+        path: "/assem-react/clube-de-campo",
         element: <ClubeDeCampo />,
       },
       {
