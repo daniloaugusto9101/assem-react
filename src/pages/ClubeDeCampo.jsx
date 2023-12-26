@@ -8,7 +8,7 @@ import * as url from "@assets/img/page-clube/"
 
 const CLUBE_DATA = [
   {
-    img: "../../src/assets/img/page-clube/clube.webp",
+    img: url.img30,
     title: "",
     text: "O Clube de Campo da ASSEM é um clube que se preocupa em oferecer uma estrutura voltada ao lazer e à qualidade de vida, sempre preservando o meio ambiente e priorizando o bom convívio social.A estrutura do clube serve aos seus associados também por meio de locações, para eventos festivos, esportivos e sociais.",
     reverse: false,

@@ -1,90 +1,92 @@
+import * as url from "@assets/img/page-clube/"
+
 const CLUBE_LIST_IMG = [
   {
-    url: "/src/assets/img/page-clube/clube (0).webp",
+    url: url.img0,
   },
   {
-    url: "/src/assets/img/page-clube/clube (1).webp",
+    url: url.img1,
   },
   {
-    url: "/src/assets/img/page-clube/clube (2).webp",
+    url: url.img2,
   },
   {
-    url: "/src/assets/img/page-clube/clube (3).webp",
+    url: url.img3,
   },
   {
-    url: "/src/assets/img/page-clube/clube (4).webp",
+    url: url.img5,
   },
   {
-    url: "/src/assets/img/page-clube/clube (5).webp",
+    url: url.img6,
   },
   {
-    url: "/src/assets/img/page-clube/clube (6).webp",
+    url: url.img7,
   },
   {
-    url: "/src/assets/img/page-clube/clube (7).webp",
+    url: url.img8,
   },
   {
-    url: "/src/assets/img/page-clube/clube (8).webp",
+    url: url.img9,
   },
   {
-    url: "/src/assets/img/page-clube/clube (9).webp",
+    url: url.img10,
   },
   {
-    url: "/src/assets/img/page-clube/clube (10).webp",
+    url: url.img11,
   },
   {
-    url: "/src/assets/img/page-clube/clube (11).webp",
+    url: url.img12,
   },
   {
-    url: "/src/assets/img/page-clube/clube (12).webp",
+    url: url.img13,
   },
   {
-    url: "/src/assets/img/page-clube/clube (13).webp",
+    url: url.img14,
   },
   {
-    url: "/src/assets/img/page-clube/clube (14).webp",
+    url: url.img15,
   },
   {
-    url: "/src/assets/img/page-clube/clube (15).webp",
+    url: url.img16,
   },
   {
-    url: "/src/assets/img/page-clube/clube (16).webp",
+    url: url.img17,
   },
   {
-    url: "/src/assets/img/page-clube/clube (17).webp",
+    url: url.img18,
   },
   {
-    url: "/src/assets/img/page-clube/clube (18).webp",
+    url: url.img19,
   },
   {
-    url: "/src/assets/img/page-clube/clube (19).webp",
+    url: url.img20,
   },
   {
-    url: "/src/assets/img/page-clube/clube (20).webp",
+    url: url.img21,
   },
   {
-    url: "/src/assets/img/page-clube/clube (21).webp",
+    url: url.img22,
   },
   {
-    url: "/src/assets/img/page-clube/clube (22).webp",
+    url: url.img23,
   },
   {
-    url: "/src/assets/img/page-clube/clube (23).webp",
+    url: url.img24,
   },
   {
-    url: "/src/assets/img/page-clube/clube (24).webp",
+    url: url.img25,
   },
   {
-    url: "/src/assets/img/page-clube/clube (25).webp",
+    url: url.img26,
   },
   {
-    url: "/src/assets/img/page-clube/clube (26).webp",
+    url: url.img27,
   },
   {
-    url: "/src/assets/img/page-clube/clube (27).webp",
+    url: url.img28,
   },
   {
-    url: "/src/assets/img/page-clube/clube (28).webp",
+    url: url.img29,
   },
 ]
 
