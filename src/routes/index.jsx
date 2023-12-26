@@ -14,6 +14,8 @@ import ClubeDeCampo from "@pages/ClubeDeCampo"
 import PousadaLitoral from "@pages/PousadaLitoral"
 import NotFoundPage from "@pages/NotFoundPage"
 import BlogNoticias from "@pages/BlogNoticias"
+import url from "@assets/file/regulamento-pousada.pdf"
+import Estatuto from "../pages/Estatuto"
 
 export const router = createBrowserRouter([
   {
@@ -77,6 +79,10 @@ export const router = createBrowserRouter([
       {
         path: "/assem-react/nossa-historia",
         element: <NossaHistoria />,
+      },
+      {
+        path: "/assem-react/estatuto",
+        element: <Estatuto />,
       },
     ],
   },
