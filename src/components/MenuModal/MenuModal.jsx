@@ -1,88 +1,20 @@
 import React from "react"
 import { AiFillCloseCircle } from "react-icons/ai"
-
-const MENU_DATA = [
-  {
-    title: "Institucional",
-    link: "",
-    dropDown: [
-      {
-        title: "Diretoria Executiva",
-        link: "/diretoria-executiva",
-        dropDown: [],
-      },
-      {
-        title: "Conselho Fiscal",
-        link: "/conselho-fiscal",
-        dropDown: [],
-      },
-      {
-        title: "Conselho Deliberativo",
-        link: "/conselho-deliberativo",
-        dropDown: [],
-      },
-      {
-        title: "Nossa história",
-        link: "/nossa-historia",
-        dropDown: [],
-      },
-      {
-        title: "Estatuto",
-        link: "/estatuto",
-        dropDown: [],
-      },
-    ],
-  },
-  {
-    title: "Associado",
-    link: "/associado",
-    dropDown: [
-      {
-        title: "Convênio Médico",
-        link: "/convenio-medico",
-        dropDown: [],
-      },
-      {
-        title: "Clube de Campo",
-        link: "/clube-de-campo",
-        dropDown: [],
-      },
-      {
-        title: "Pousada Litoral",
-        link: "/pousada-litoral",
-        dropDown: [],
-      },
-      {
-        title: "Atividades Físicas",
-        link: "/atividades-fisicas",
-        dropDown: [],
-      },
-      {
-        title: "Clube de Descontos",
-        link: "/clube-de-descontos",
-        dropDown: [],
-      },
-    ],
-  },
-  {
-    title: "Trabalhe Conosco",
-    link: "",
-    dropDown: [
-      {
-        title: "Trabalhe Conosco",
-        link: "/trabalhe-Conosco",
-        dropDown: [],
-      },
-    ],
-  },
-]
+import menuDataHeader from "@components/MenuData/menuDataHeader"
+import { GlobalContext } from "@/storage/GlobalContext"
 
 const MenuModal = () => {
+  const { isModal, setModal } = React.useContext(GlobalContext)
   return (
-    <div className="animate-slide-toLeftModal hidden fixed top-0 left-0 w-full h-full bg-primary-900 z-50 overflow-y-scroll text-ternary-50">
-      <AiFillCloseCircle className=" text-5xl absolute right-5 top-5 cursor-pointer" />
-      <ul className=" text-center p-20 sm:grid sm:grid-cols-3 sm:text-left ">
-        {MENU_DATA.map((obj, index) => (
+    <div
+      className={`animate-slide-toLeftModal fixed top-0 left-0 w-full h-full bg-primary-900 z-50 overflow-y-scroll text-ternary-50`}
+    >
+      <AiFillCloseCircle
+        className=" text-5xl absolute right-5 top-5 cursor-pointer"
+        onClick={() => setModal(!isModal)}
+      />
+      <ul className=" text-center p-20 sm:grid md:grid-cols-4 md:text-left ">
+        {menuDataHeader.map((obj, index) => (
           <li key={index} className="mb-10">
             <p className="text-xl font-bold uppercase">{obj.title}</p>
             {obj.dropDown.length > 0 ? (
