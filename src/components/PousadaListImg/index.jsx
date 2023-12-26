@@ -1,42 +1,41 @@
+import * as url from "@assets/img/page-pousada/"
+
 const POUSADA_LIST_IMG = [
   {
-    url: "/src/assets/img/page-pousada/pousada (0).webp",
+    url: url.img1,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (1).webp",
+    url: url.img2,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (2).webp",
+    url: url.img3,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (3).webp",
+    url: url.img4,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (4).webp",
+    url: url.img5,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (5).webp",
+    url: url.img6,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (6).webp",
+    url: url.img7,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (7).webp",
+    url: url.img7,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (8).webp",
+    url: url.img9,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (9).webp",
+    url: url.img10,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (10).webp",
+    url: url.img11,
   },
   {
-    url: "/src/assets/img/page-pousada/pousada (11).webp",
-  },
-  {
-    url: "/src/assets/img/page-pousada/pousada (12).webp",
+    url: url.img12,
   },
 ]
 
