@@ -4,6 +4,7 @@ import SectionDoubleSimple from "@components/SectionDoubleSimple"
 import ParagrapListIco from "@components/ParagrapListIco"
 import CLUB_LIST from "@components/ClubList/ClubList"
 import CLUBE_LIST_IMG from "@components/ClubListImg/"
+import * as url from "@assets/img/page-clube/"
 
 const CLUBE_DATA = [
   {
