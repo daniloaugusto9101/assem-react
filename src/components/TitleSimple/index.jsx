@@ -1,6 +1,6 @@
 const TitleSimple = ({ title }) => {
   return (
-    <h2 className="uppercase text-ternary-700 text-center text-4xl md:text-5xl font-bold mb-10 ">
+    <h2 className="uppercase text-ternary-700 text-center text-4xl md:text-5xl font-bold">
       {title}
     </h2>
   )

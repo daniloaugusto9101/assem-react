@@ -7,7 +7,7 @@ import "./styles.css"
 
 const SlideThumbsGallery = ({ imagensData }) => {
   return (
-    <section className="mb-40">
+    <section>
       <swiper-container
         class="mySwiper"
         thumbs-swiper=".mySwiper2"

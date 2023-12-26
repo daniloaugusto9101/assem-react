@@ -18,14 +18,18 @@ const POUSADA_DATA = [
 
 const Pousada = () => {
   return (
-    <section className="my-20">
-      <TitleSimple title="Pousada" />
-      <SlideThumbsGallery imagensData={POUSADA_LIST_IMG} />
-      <SectionDoubleSimple
-        img={POUSADA_DATA[0].img}
-        text={POUSADA_DATA[0].text}
-      />
-      <ParagrapListIco paragrapList={POUSADA_LIST_PARAGRAPH} />
+    <section>
+      <header className="my-20">
+        <TitleSimple title="Pousada" />
+      </header>
+      <main className="mb-40 flex flex-col gap-40">
+        <SlideThumbsGallery imagensData={POUSADA_LIST_IMG} />
+        <SectionDoubleSimple
+          img={POUSADA_DATA[0].img}
+          text={POUSADA_DATA[0].text}
+        />
+        <ParagrapListIco paragrapList={POUSADA_LIST_PARAGRAPH} />
+      </main>
     </section>
   )
 }

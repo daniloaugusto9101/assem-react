@@ -17,11 +17,18 @@ const CLUBE_DATA = [
 
 const ClubeDeCampo = () => {
   return (
-    <section className="my-20">
-      <TitleSimple title="Clube de campo" />
-      <SlideThumbsGallery imagensData={CLUBE_LIST_IMG} />
-      <SectionDoubleSimple img={CLUBE_DATA[0].img} text={CLUBE_DATA[0].text} />
-      <ParagrapListIco paragrapList={CLUB_LIST} />
+    <section>
+      <header className="my-20">
+        <TitleSimple title="Clube de campo" />
+      </header>
+      <main className="mb-40 flex flex-col gap-40">
+        <SlideThumbsGallery imagensData={CLUBE_LIST_IMG} />
+        <SectionDoubleSimple
+          img={CLUBE_DATA[0].img}
+          text={CLUBE_DATA[0].text}
+        />
+        <ParagrapListIco paragrapList={CLUB_LIST} />
+      </main>
     </section>
   )
 }
