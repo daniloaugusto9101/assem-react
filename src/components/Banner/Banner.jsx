@@ -1,4 +1,4 @@
-import url from "@/assets/video/banner.mp4"
+import url from "@assets/video/banner.mp4"
 
 const Banner = () => {
   return (

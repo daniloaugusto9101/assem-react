@@ -1,4 +1,4 @@
-import Banner from "@components/Banner/Banner"
+import Banner from "@components/Banner"
 import SectionNoticias from "@components/SectionNoticias/SectionNoticias"
 import SlideAtividades from "@components/SlideAtividades/SlideAtividades"
 import SectionLocais from "@components/SectionLocais/SectionLocais"
