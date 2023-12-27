@@ -1,10 +1,10 @@
-import MenuSegundarioList from "@components/MenuSegundarioList/MenuSegundarioList"
 import RedesSociaais from "@components/RedesSociais/RedesSociais"
+import MenuFooter from "@components/MenuFooter/"
 
 const Footer = () => {
   return (
     <footer>
-      <MenuSegundarioList />
+      <MenuFooter />
       <RedesSociaais />
     </footer>
   )
