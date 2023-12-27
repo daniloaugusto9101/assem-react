@@ -13,14 +13,14 @@ const MenuModal = () => {
         className=" text-5xl absolute right-5 top-5 cursor-pointer"
         onClick={() => setModal(!isModal)}
       />
-      <ul className=" text-center p-20 sm:grid md:grid-cols-4 md:text-left ">
+      <ul className=" text-center p-20 lg:grid  lg:grid-cols-5 lg:text-left ">
         {menuDataHeader.map((obj, index) => (
-          <li key={index} className="mb-10">
+          <li key={index} className="mb-5">
             <p className="text-xl font-bold uppercase">{obj.title}</p>
             {obj.dropDown.length > 0 ? (
               <ul className="text-lg">
                 {obj.dropDown.map((ele, ind) => (
-                  <li key={ind} className=" mt-1 sm:my-5 sm:ml-3">
+                  <li key={ind} className="mt-1 lg:my-5">
                     <a href={ele.link}>{ele.title}</a>
                   </li>
                 ))}
