@@ -22,7 +22,8 @@ const SectionDoubleText = (props) => {
     >
       <TitleText title={props.title} />
       <p className={`text-ternary-600 text-xl xl:text-3xl `}>{props.text}</p>
-      <Button txtBtn={props.txtBtn} url={props.url} />
+      {/* <Button txtBtn={props.txtBtn} url={props.url} target={props.isTarget} /> */}
+      <Button {...props} />
     </div>
   )
 }

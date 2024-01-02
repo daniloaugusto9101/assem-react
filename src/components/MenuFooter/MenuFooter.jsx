@@ -13,7 +13,9 @@ const MenuFooter = () => {
               <ul className="text-sm">
                 {obj.dropDown.map((ele, ind) => (
                   <li key={ind} className=" mt-1">
-                    <Link to={ele.link}>{ele.title}</Link>
+                    <Link to={ele.link} target={ele.isTarget && "_blank"}>
+                      {ele.title}
+                    </Link>
                   </li>
                 ))}
               </ul>

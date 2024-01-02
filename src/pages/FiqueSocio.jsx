@@ -4,6 +4,7 @@ import ParagrapList from "@components/ParagrapList"
 import TitleSimple from "@components/TitleSimple"
 import CardDouble from "@components/CardDouble"
 import CardVideo from "@components/CardVideo"
+import video from "@assets/video/banner.mp4"
 
 const FiqueSocio = () => {
   const DATA_FIQUE_SOCIO = [
@@ -45,9 +46,7 @@ const FiqueSocio = () => {
   return (
     <section className=" w-full">
       <div className="container m-auto px-2 flex flex-col gap-40 mb-40">
-        <CardVideo
-          url={"https://www.youtube.com/embed/HKV6pqcdHVw?si=2zO8SOcAN5zYXJa3"}
-        />
+        <CardVideo url={video} />
         <div className="flex flex-col gap-40 ">
           {DATA_FIQUE_SOCIO.map((obj, index) => (
             <SectionDoubleSimple {...obj} key={index} />

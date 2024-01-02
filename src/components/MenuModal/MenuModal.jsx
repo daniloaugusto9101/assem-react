@@ -5,6 +5,7 @@ import { GlobalContext } from "@/storage/GlobalContext"
 
 const MenuModal = () => {
   const { isModal, setModal } = React.useContext(GlobalContext)
+
   return (
     <div
       className={`animate-slide-toLeftModal fixed top-0 left-0 w-full h-full bg-primary-900 z-50 overflow-y-scroll text-ternary-50`}
@@ -21,7 +22,9 @@ const MenuModal = () => {
               <ul className="text-lg">
                 {obj.dropDown.map((ele, ind) => (
                   <li key={ind} className="mt-1 lg:my-5">
-                    <a href={ele.link}>{ele.title}</a>
+                    <a href={ele.link} target={ele.isTarget && "_blank"}>
+                      {ele.title}
+                    </a>
                   </li>
                 ))}
               </ul>

@@ -8,6 +8,7 @@ const ASSOCIAR_DATA = {
   img: imgAssociar,
   reserve: false,
   url: "./fique-socio",
+  isTarget: false,
 }
 
 const SectionAssociar = () => {
