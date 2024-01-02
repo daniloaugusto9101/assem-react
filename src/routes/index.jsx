@@ -5,16 +5,15 @@ import Contatos from "@pages/Contatos"
 import FiqueSocio from "@pages/FiqueSocio"
 import ConvenioMedico from "@pages/ConvenioMedico"
 import ClubeDeDesconto from "@pages/CLubeDeDesconto"
-import Atividades from "@pages/Atividades"
 import DiretoriaExecutiva from "@pages/DiretoriaExecutiva"
 import ConselhoFiscal from "@pages/ConselhoFiscal"
 import ConselhoDeliberativo from "@pages/ConselhoDeliberativo"
 import NossaHistoria from "@pages/NossaHistoria"
+import Atividades from "@pages/Atividades"
 import ClubeDeCampo from "@pages/ClubeDeCampo"
 import PousadaLitoral from "@pages/PousadaLitoral"
 import NotFoundPage from "@pages/NotFoundPage"
 import BlogNoticias from "@pages/BlogNoticias"
-import url from "@assets/file/regulamento-pousada.pdf"
 import Estatuto from "../pages/Estatuto"
 
 export const router = createBrowserRouter([
@@ -49,6 +48,10 @@ export const router = createBrowserRouter([
         element: <ConvenioMedico />,
       },
       {
+        path: "/assem-react/atividades-fisicas",
+        element: <Atividades />,
+      },
+      {
         path: "/assem-react/clube-de-desconto",
         element: <ClubeDeDesconto />,
       },
@@ -56,13 +59,10 @@ export const router = createBrowserRouter([
         path: "/assem-react/clube-de-campo",
         element: <ClubeDeCampo />,
       },
+
       {
         path: "/assem-react/pousada-litoral",
         element: <PousadaLitoral />,
-      },
-      {
-        path: "assem-react/atividades-fisicas",
-        element: <Atividades />,
       },
       {
         path: "/assem-react/diretoria-executiva",

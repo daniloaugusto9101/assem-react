@@ -1,13 +1,15 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-const Button = (props) => {
+const Button = ({ url, txtBtn }) => {
   return (
     <Link
-      to={props.url}
+      to={url}
       className="border-ternary-600 border py-3 px-6 text-ternary-600 uppercase hover:text-secondary-700 hover:border-secondary-700"
+      target="_blank"
+      rel="noopener noreferrer"
     >
-      {props.txtBtn}
+      {txtBtn}
     </Link>
   )
 }
