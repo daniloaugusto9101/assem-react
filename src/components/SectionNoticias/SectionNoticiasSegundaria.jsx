@@ -3,12 +3,24 @@ import useFetchPost from "../../hooks/useFetchPost"
 const SectionNoticiasSegundaria = () => {
   const { post, thumbnail } = useFetchPost(6, 5)
 
+  const getItemClass = (index) => {
+    switch (index) {
+      case 2:
+        return "md:order-2 "
+      case 3:
+        return "md:order-1"
+    }
+  }
+
   if (post && thumbnail) {
     return (
       <>
         {post.map((obj, index) => (
           <div
-            className="bg-ternary-200 text-primary-900 hover:text-secondary-900"
+            // className={`${getItemClass(index)} `}
+            className={`bg-ternary-200 text-primary-900 hover:text-secondary-900 ${getItemClass(
+              index
+            )}`}
             key={index}
           >
             <a
