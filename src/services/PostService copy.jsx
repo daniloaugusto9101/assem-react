@@ -26,7 +26,7 @@ const getIdsThumbnails = async (
 }
 
 const getMediaThumbnails = async (id) => {
-  const recurso = "media?orderby=include"
+  const recurso = "media?"
   const params = {
     include: id,
   }
