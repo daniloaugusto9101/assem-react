@@ -1,5 +1,6 @@
 import Banner from "@components/Banner"
 import SectionNoticias from "@components/SectionNoticias/SectionNoticias"
+import Agenda from "@components/Agenda"
 import SlideAtividades from "@components/SlideAtividades/SlideAtividades"
 import SectionLocais from "@components/SectionLocais/SectionLocais"
 import SectionAssociar from "@components/SectionAssociar/SectionAssociar"
@@ -12,6 +13,7 @@ const Home = () => {
     <>
       <Banner />
       <SectionNoticias />
+      <Agenda />
       <SectionAssociar />
       <SectionConvenioMedico />
       <SlideAtividades />
