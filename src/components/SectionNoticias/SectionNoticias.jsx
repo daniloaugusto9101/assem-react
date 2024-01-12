@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 const SectionNoticias = () => {
   return (
-    <section className="max-w-5xl m-auto mb-44">
+    <section className="max-w-5xl m-auto mb-28">
       <div className="grid gap-4 md:grid-cols-3 px-2 ">
         <SectionNoticiasDestaque />
         <SectionNoticiasSegundaria />
