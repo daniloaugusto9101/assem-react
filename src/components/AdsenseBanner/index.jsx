@@ -1,4 +1,4 @@
-import * as url from "@assets/img/adsense/adsenseBanner.png"
+import url from "@assets/img/adsense/adsenseBanner.png"
 
 const AdsenseBanner = () => {
   return <img src={url} />

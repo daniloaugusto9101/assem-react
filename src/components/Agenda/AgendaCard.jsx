@@ -1,6 +1,7 @@
 import React from "react"
 import Icons from "@components/Icons/Icons"
 import { obterDiaFormatado, obterMesAbreviado } from "@/hooks/useFormartDate"
+import { Link } from "react-router-dom"
 
 const AgendaCard = ({ agendaPosts }) => {
   return (
@@ -25,16 +26,17 @@ const AgendaCard = ({ agendaPosts }) => {
               </p>
 
               <p className="flex items-baseline text-ternary-700 gap-1">
-                <Icons nomeDoIcone="FaLocationDot" />
+                {/* <Icons nomeDoIcone="FaLocationDot" /> */}
                 <span>{obj.acf.local_do_evento}</span>
               </p>
             </div>
-            <a
-              href={obj.link}
+
+            <Link
+              to={`/assem-react/post/${obj.id}`}
               className="italic  text-ternary-700 hover:text-secondary-700"
             >
-              Saiba mais...
-            </a>
+              <span>Ver detalhes</span>
+            </Link>
           </div>
         </div>
       ))}

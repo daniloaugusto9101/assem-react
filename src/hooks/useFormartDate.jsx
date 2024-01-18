@@ -16,4 +16,16 @@ const obterMesAbreviado = (dataString) => {
   return mesAbreviado
 }
 
-export { obterDiaFormatado, obterMesAbreviado }
+function obterDataCompleta(data) {
+  let dataObjeto = new Date(data)
+  let dia = dataObjeto.getDate()
+  let mes = dataObjeto.getMonth() + 1 // Os meses são baseados em zero
+  let ano = dataObjeto.getFullYear()
+
+  dia = dia < 10 ? "0" + dia : dia
+  mes = mes < 10 ? "0" + mes : mes
+
+  return dia + "/" + mes + "/" + ano
+}
+
+export { obterDiaFormatado, obterMesAbreviado, obterDataCompleta }

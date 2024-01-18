@@ -15,6 +15,7 @@ import PousadaLitoral from "@pages/PousadaLitoral"
 import NotFoundPage from "@pages/NotFoundPage"
 import BlogNoticias from "@pages/BlogNoticias"
 import Estatuto from "../pages/Estatuto"
+import PostDetails from "@components/Posts/PostDetails"
 
 export const router = createBrowserRouter([
   {
@@ -83,6 +84,10 @@ export const router = createBrowserRouter([
       {
         path: "/assem-react/estatuto",
         element: <Estatuto />,
+      },
+      {
+        path: "/assem-react/post/:postId",
+        element: <PostDetails />,
       },
     ],
   },

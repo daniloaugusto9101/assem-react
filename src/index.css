@@ -3,3 +3,14 @@
 @tailwind utilities;
 
 
+.h1-formatting {
+    text-align: center;
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+   }
+   
+   .p-formatting {
+    color: green;
+    font-size: 20px;
+   }

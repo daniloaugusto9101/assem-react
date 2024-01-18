@@ -1,5 +1,17 @@
 import { api } from "../config/http"
 
+const getPostDetails = async (postId = 1501) => {
+  try {
+    const resource = `posts/${postId}?_embed=true`
+    const { data } = await api.get(resource)
+    return data
+  } catch (error) {
+    // Trate os erros ou repasse para quem chama a função, dependendo do seu caso
+    console.error("Erro ao obter detalhes do post:", error)
+    throw error
+  }
+}
+
 const getPosts = async (idCategory = 1, perPage = 1) => {
   const recurso = "posts?"
   const params = {
@@ -44,6 +56,7 @@ const getThumbnails = async (idCategory, perPage) => {
 }
 
 export default {
+  getPostDetails,
   getPosts,
   getThumbnails,
 }
