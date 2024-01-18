@@ -1,21 +1,22 @@
 import parse from "html-react-parser"
 import DOMPurify from "dompurify"
 
-// const useRenderHtml = (content) => {
-//   const sanitizedHTML = DOMPurify.sanitize(content)
-//   const parsedHTML = parse(sanitizedHTML)
-//   return parsedHTML
-// }
-
 const useRenderHtml = (content) => {
   const sanitizedHTML = DOMPurify.sanitize(content)
   const transform = (node) => {
     switch (node.tagName) {
-      case "h1":
-        node.attribs.class = "h1-formatting"
-        break
       case "p":
-        node.attribs.class = "p-formatting"
+        delete node.attribs.style
+        node.attribs.class = "text-ternary-700"
+        break
+      case "span":
+        delete node.attribs.style
+        node.attribs.class = "text-secondary-600"
+        break
+      case "a":
+        delete node.attribs.style
+        node.attribs.class = "text-secondary-900 underline decoration-solid"
+        node.attribs.target = "_blank"
         break
       default:
         break

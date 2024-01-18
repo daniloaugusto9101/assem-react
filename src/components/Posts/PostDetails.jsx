@@ -12,9 +12,9 @@ const PostDetails = () => {
   const parsedHTML = useRenderHtml(post.content?.rendered)
 
   return (
-    <section className=" max-w-4xl m-auto mt-10 grid gap-5 p-2">
+    <section className=" max-w-4xl m-auto mt-10 grid gap-5 p-2 ">
       <AdsenseBanner />
-      <div className="flex gap-2">
+      <div className="flex gap-2 ">
         <div className=" flex-initial w-1/3">
           <AdsenseSidebar />
         </div>
@@ -33,9 +33,7 @@ const PostDetails = () => {
             </p>
           </div>
 
-          <div className="text-2xl !text-ternary-700 flex flex-col gap-3">
-            {parsedHTML}
-          </div>
+          <div className="text-2xl  flex flex-col gap-3">{parsedHTML}</div>
         </div>
       </div>
     </section>
