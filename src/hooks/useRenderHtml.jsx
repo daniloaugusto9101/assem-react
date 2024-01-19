@@ -11,12 +11,17 @@ const useRenderHtml = (content) => {
         break
       case "span":
         delete node.attribs.style
-        node.attribs.class = "text-secondary-600"
         break
       case "a":
         delete node.attribs.style
-        node.attribs.class = "text-secondary-900 underline decoration-solid"
+        node.attribs.class =
+          "text-secondary-900 underline decoration-solid hover:text-2xl"
         node.attribs.target = "_blank"
+        break
+      case "ul":
+        delete node.attribs.style
+        node.attribs.class =
+          "flex flex-col text-ternary-700 list-disc leading-none ml-6"
         break
       default:
         break

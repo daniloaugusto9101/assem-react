@@ -33,7 +33,9 @@ const PostDetails = () => {
             </p>
           </div>
 
-          <div className="text-2xl  flex flex-col gap-3">{parsedHTML}</div>
+          <div className="text-2xl  flex flex-col gap-3 space-y-5 ">
+            {parsedHTML}
+          </div>
         </div>
       </div>
     </section>
