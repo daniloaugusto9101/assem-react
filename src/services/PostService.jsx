@@ -1,12 +1,19 @@
 import { api } from "../config/http"
 
-const getPostDetails = async (postId = 1501) => {
+const getPostDetails = async (
+  idPost = 123,
+  acf_format = "standard",
+  _embed = "author"
+) => {
   try {
-    const resource = `posts/${postId}?_embed=true`
-    const { data } = await api.get(resource)
+    const recurso = `posts/${idPost}`
+    const params = {
+      acf_format: acf_format,
+      _embed: _embed,
+    }
+    const { data } = await api.get(`${recurso}`, { params })
     return data
   } catch (error) {
-    // Trate os erros ou repasse para quem chama a função, dependendo do seu caso
     console.error("Erro ao obter detalhes do post:", error)
     throw error
   }
