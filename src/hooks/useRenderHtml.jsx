@@ -9,8 +9,17 @@ const useRenderHtml = (content) => {
         delete node.attribs.style
         node.attribs.class = "text-ternary-700"
         break
+      case "strong":
+        delete node.attribs.style
+        node.attribs.class = "text-ternary-700"
+        break
+      case "div":
+        delete node.attribs.style
+        node.attribs.class = "text-ternary-700"
+        break
       case "span":
         delete node.attribs.style
+        node.attribs.class = "text-ternary-700"
         break
       case "a":
         delete node.attribs.style

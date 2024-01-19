@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import useFetchPost from "../../hooks/useFetchPost"
 
 const SectionNoticiasSegundaria = () => {
@@ -23,13 +24,14 @@ const SectionNoticiasSegundaria = () => {
             )}`}
             key={index}
           >
-            <a
-              href={obj.link}
+            <Link
+              key={index}
+              to={`/assem-react/post/${obj.id}`}
               className="grid grid-cols-2 gap-2 items-center md:grid-cols-none"
             >
               <img src={thumbnail[index].guid.rendered} />
               <h2 className="  sm:text-xl">{obj.title.rendered}</h2>
-            </a>
+            </Link>
           </div>
         ))}
       </>
