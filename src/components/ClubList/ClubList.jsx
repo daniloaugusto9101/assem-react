@@ -16,7 +16,7 @@ const CLUBE_LIST = [
         text: "Sócio: entrada gratuita",
       },
       {
-        text: "Convidado: R$ 20 (exceto pisicna)",
+        text: "Convidado: R$ 20 (exceto piscina)",
       },
     ],
   },

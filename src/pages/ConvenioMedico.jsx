@@ -22,13 +22,13 @@ const CONVENIO_MEDICO_DATA = [
   {
     img: urlImg.img8,
     title: "Portabilidade",
-    text: "Portabilidade de convênios médicos é a possibilidade de um beneficiário de plano de saúde trocar de operadora sem perder as suas condições de cobertura e carências já cumpridas. Ou seja, é uma forma de mudar de plano de saúde mantendo as mesmas condições do plano anterior. Consulte o nosso catálago de planos para mais detalhes.",
+    text: "Portabilidade de convênios médicos é a possibilidade de um beneficiário de plano de saúde trocar de operadora sem perder as suas condições de cobertura e carências já cumpridas. Ou seja, é uma forma de mudar de plano de saúde mantendo as mesmas condições do plano anterior. Consulte o nosso catálogo de planos para mais detalhes.",
     reverse: true,
   },
   {
     img: urlImg.img7,
     title: "Carência",
-    text: "Carência de convênios médicos é o período de tempo em que o beneficiário do plano de saúde precisa esperar antes de ter direito a determinados procedimentos ou serviços de saúde previstos no contrato. Em outras palavras, é o tempo de espera que o beneficiário precisa cumprir para utilizar alguns serviços do plano. Consulte o nosso catálago de planos para mais detalhes.",
+    text: "Carência de convênios médicos é o período de tempo em que o beneficiário do plano de saúde precisa esperar antes de ter direito a determinados procedimentos ou serviços de saúde previstos no contrato. Em outras palavras, é o tempo de espera que o beneficiário precisa cumprir para utilizar alguns serviços do plano. Consulte o nosso catálogo de planos para mais detalhes.",
     reverse: false,
   },
 ]
@@ -77,8 +77,8 @@ const ConvenioMedico = () => {
       <div className="container m-auto px-5 sm-px-0">
         <TitleSimple title="Documentos" />
         <p className="mb-10 text-2xl text-ternary-600 text-center sm:text-left">
-          Para a contração de plano de saúde pela ASSEM é necessáio a cópias dos
-          documentis abaixo:
+          Para a contração de plano de saúde pela ASSEM é necessário a cópias
+          dos documentos abaixo:
         </p>
         <ParagrapList text={DOCUMETN_LIST} />
       </div>

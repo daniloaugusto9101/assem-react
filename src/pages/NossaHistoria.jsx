@@ -70,7 +70,7 @@ const NossaHistoria = () => {
         <p className="mb-5">
           Era março de 1979, dia 23, quando um grupo de servidores idealizou um
           lugar que promovesse a integração da categoria, onde pudessem se
-          beneficiar de produtos e serviços, como lazer, saúde e entreterimento.
+          beneficiar de produtos e serviços, como lazer, saúde e entretenimento.
         </p>
         <p>
           Nesta data, nascia a ASSEM – a Associação dos Servidores Municipais de

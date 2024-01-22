@@ -16,7 +16,7 @@ const parceirosData = [
       {
         nome: "SULAMÉRICA",
         descricao:
-          "Cobertura de seguro e também assistência funeral. Oconvênio prevê ainda “Medico na Tela” (consulta on-line), clube de vantagens para descontos, sorteios mensais, descontos em farmácias e assistência residencial. O valor da mensalidade é a partir de R$ 10 e as coberturas de seguro podem chegar a R$ 5 milhões",
+          "Cobertura de seguro e também assistência funeral. O convênio prevê ainda “Medico na Tela” (consulta on-line), clube de vantagens para descontos, sorteios mensais, descontos em farmácias e assistência residencial. O valor da mensalidade é a partir de R$ 10 e as coberturas de seguro podem chegar a R$ 5 milhões",
         endereco: "",
         telefone: "",
         facebook: "",
@@ -113,7 +113,7 @@ const parceirosData = [
       {
         nome: "UNIVAP - Fundação Valeparaibana de Ensino",
         descricao:
-          "Desc. de 15% nas mensalidades, inclusive nas matrículas e renovações, que forem pagas no respectivo vencimento, válidas para os cursos de Graduação, Pós-Graduação e Strictu Sensu da UNIVAP e da Educação Básica nos Colégios mantidos pelo sistema FVE. Este desconto se destina a alunos adimplentes, ingressantes no curso no ano letivo de 2022 ou já participantes no ano letivo anterior que usufruíram desse desconto em razão de contrato de convênio anterior.",
+          "Desc. de 15% nas mensalidades, inclusive nas matrículas e renovações, que forem pagas no respectivo vencimento, válidas para os cursos de Graduação, Pós-Graduação e Stricto Sensu da UNIVAP e da Educação Básica nos Colégios mantidos pelo sistema FVE. Este desconto se destina a alunos adimplentes, ingressantes no curso no ano letivo de 2022 ou já participantes no ano letivo anterior que usufruíram desse desconto em razão de contrato de convênio anterior.",
         telefone: "Telefone: (12) 3947-1206",
         facebook: "",
         instagram: "",
@@ -287,7 +287,7 @@ const parceirosData = [
       },
       {
         nome: "DANIELLE CLEIDEANE SANTOS",
-        descricao: "Desc. de 50%  Psicólogia Clínica",
+        descricao: "Desc. de 50%  Psicologia Clínica",
         telefone: "Telefone: (12) 97401-6384",
         endereco:
           "Espaço Fenix – R. Euclides Miragaia, 464, Sala 25, Centro – SJC",
