@@ -5,17 +5,19 @@ import TitleSimple from "@components/TitleSimple"
 import CardDouble from "@components/CardDouble"
 import CardVideo from "@components/CardVideo"
 import video from "@assets/video/banner.mp4"
+import urlAssociar from "@/assets/img/page-fique-socio/associar.webp"
+import urlFamilia from "@/assets/img/page-fique-socio/familia.webp"
 
 const FiqueSocio = () => {
   const DATA_FIQUE_SOCIO = [
     {
-      img: "../../src/assets/img/page-fique-socio/associar.webp",
+      img: urlAssociar,
       title: "Por que me associar",
       text: "Junte-se a nós, como associado, você terá acesso a uma variedade de atividades e eventos emocionantes, ter experiência e diversão com nossa Pousada e Clube de Campo. Não perca mais tempo, torne-se um associado hoje mesmo.",
       reverse: false,
     },
     {
-      img: "../../src/assets/img/page-fique-socio/familia.webp",
+      img: urlFamilia,
       title: "Quem pode ser dependente",
       text: "Cônjuge, pai, mãe, sogro, sogra, filhos solteiros, enteados e netos até 12 anos",
       reverse: true,

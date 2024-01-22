@@ -5,6 +5,10 @@ const useRenderHtml = (content) => {
   const sanitizedHTML = DOMPurify.sanitize(content)
   const transform = (node) => {
     switch (node.tagName) {
+      case "img":
+        delete node.attribs.style
+        node.attribs.class = "m-auto"
+        break
       case "p":
         delete node.attribs.style
         node.attribs.class = "text-ternary-700"

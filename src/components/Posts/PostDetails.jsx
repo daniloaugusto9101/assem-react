@@ -18,13 +18,13 @@ const PostDetails = () => {
     return <div>Carregando...</div> // Indicador de carregamento
   }
   return (
-    <section className="max-w-4xl m-auto mt-10 grid gap-5 p-2">
+    <section className="max-w-4xl m-auto mt-10 grid gap-5 p-2 ">
       <AdsenseBanner />
       <div className="flex gap-2">
-        <div className="flex-initial w-1/3">
+        <div className="hidden flex-initial sm:w-1/3 sm:block">
           <AdsenseSidebar />
         </div>
-        <div className="flex-initial w-2/3 flex flex-col gap-2">
+        <div className="flex-initial sm:w-2/3 flex flex-col gap-2">
           <img src={thumbnail} alt="Thumbnail" />
           <h2 className="text-3xl font-bold text-primary-900">
             <p>{title}</p>
