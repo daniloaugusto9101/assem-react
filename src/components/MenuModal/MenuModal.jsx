@@ -2,6 +2,7 @@ import React from "react"
 import { AiFillCloseCircle } from "react-icons/ai"
 import menuDataHeader from "@components/MenuData/menuDataHeader"
 import { GlobalContext } from "@/storage/GlobalContext"
+import { Link } from "react-router-dom"
 
 const MenuModal = () => {
   const { isModal, setModal } = React.useContext(GlobalContext)
@@ -22,9 +23,13 @@ const MenuModal = () => {
               <ul className="text-lg">
                 {obj.dropDown.map((ele, ind) => (
                   <li key={ind} className="mt-1 lg:my-5">
-                    <a href={ele.link} target={ele.isTarget && "_blank"}>
+                    <Link
+                      to={ele.link}
+                      target={ele.isTarget && "_blank"}
+                      onClick={() => setModal(!isModal)}
+                    >
                       {ele.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
