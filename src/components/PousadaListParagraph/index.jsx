@@ -1,13 +1,13 @@
 const POUSADA_LIST_PARAGRAPH = [
-  {
-    text: "Regulamento",
-    ico: 1,
-    itens: [
-      {
-        text: "Regulamento da Pousada aqui",
-      },
-    ],
-  },
+  // {
+  //   text: "Regulamento",
+  //   ico: 1,
+  //   itens: [
+  //     {
+  //       text: "Regulamento da Pousada aqui",
+  //     },
+  //   ],
+  // },
   {
     text: "Café da manhã",
     ico: 2,
@@ -93,6 +93,15 @@ const POUSADA_LIST_PARAGRAPH = [
       },
     ],
   },
+  {
+    text: "Solário",
+    ico: 9,
+    itens: [
+      {
+        text: " Vista para o mar",
+      },
+    ],
+  },
 
   {
     text: "Pagamentos da reserva",
@@ -113,81 +122,6 @@ const POUSADA_LIST_PARAGRAPH = [
     ],
   },
 
-  {
-    text: "Quartos",
-    ico: 11,
-    itens: [
-      {
-        text: "Ar-condicionado",
-      },
-      {
-        text: "Berço",
-      },
-      {
-        text: "Sabonete",
-      },
-      {
-        text: "Toalhas",
-      },
-      {
-        text: "Roupa de cama",
-      },
-      {
-        text: "Cobertor",
-      },
-      {
-        text: "Frigobar",
-      },
-      {
-        text: "Tomadas 220v",
-      },
-      {
-        text: "Secador de cabelo",
-      },
-      {
-        text: "Armários com cabide",
-      },
-      {
-        text: "TV Smart com acesso internet, canais aberto e App de streaming",
-      },
-      {
-        text: "Obs: a pousada não possui conta de app de streaming, a conta deve ser usada com a própria conta do hóspede",
-      },
-    ],
-  },
-  {
-    text: "Alimentação e bebidas*",
-    ico: 7,
-    itens: [
-      {
-        text: "Sorvetes",
-      },
-      {
-        text: "Açaí",
-      },
-      {
-        text: "Água",
-      },
-      {
-        text: "Refrigerante e sucos",
-      },
-      {
-        text: "Cervejas",
-      },
-      {
-        text: "Bebidas alcoólicas",
-      },
-      {
-        text: "Cafezinho",
-      },
-      {
-        text: "Lanches e porções",
-      },
-      {
-        text: "Bar",
-      },
-    ],
-  },
   {
     text: "Salão de jogos",
     ico: 12,
@@ -240,20 +174,87 @@ const POUSADA_LIST_PARAGRAPH = [
     ],
   },
   {
-    text: "Solário",
-    ico: 9,
+    text: "Alimentação e bebidas*",
+    ico: 7,
     itens: [
       {
-        text: " Vista para o mar",
+        text: "Sorvetes",
+      },
+      {
+        text: "Açaí",
+      },
+      {
+        text: "Água",
+      },
+      {
+        text: "Refrigerante e sucos",
+      },
+      {
+        text: "Cervejas",
+      },
+      {
+        text: "Bebidas alcoólicas",
+      },
+      {
+        text: "Cafezinho",
+      },
+      {
+        text: "Lanches e porções",
+      },
+      {
+        text: "Bar",
       },
     ],
   },
+
   {
     text: "Elevador",
     ico: 9,
     itens: [
       {
         text: "Local possui elevador",
+      },
+    ],
+  },
+  {
+    text: "Quartos",
+    ico: 11,
+    itens: [
+      {
+        text: "Ar-condicionado",
+      },
+      {
+        text: "Berço",
+      },
+      {
+        text: "Sabonete",
+      },
+      {
+        text: "Toalhas",
+      },
+      {
+        text: "Roupa de cama",
+      },
+      {
+        text: "Cobertor",
+      },
+      {
+        text: "Frigobar",
+      },
+      {
+        text: "Tomadas 220v",
+      },
+      {
+        text: "Secador de cabelo",
+      },
+      {
+        text: "Armários com cabide",
+      },
+      {
+        text: "TV Smart com acesso internet, canais aberto e App de streaming",
+      },
+      {
+        text: "Obs: a pousada não possui conta de app de streaming, a conta deve ser usada com a própria conta do hóspede",
       },
     ],
   },

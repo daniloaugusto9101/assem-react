@@ -1,3 +1,4 @@
+import Button from "../Button/Button"
 const SectionDoubleSimple = (props) => {
   return (
     <div className=" px-5 grid gap-10 md:grid-cols-2 md:items-center">

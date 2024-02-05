@@ -75,9 +75,6 @@ const CLUBE_LIST = [
       {
         text: "Guarda volume",
       },
-      {
-        text: "Regras da piscina aqui",
-      },
     ],
   },
   {
