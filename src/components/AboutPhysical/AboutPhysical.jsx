@@ -6,7 +6,7 @@ const AboutPhysical = (props) => {
   return (
     <div className="flex flex-col items-center gap-10">
       <SectionDoubleSimple {...props} />
-      <Button url={horarios} txtBtn="Horários" />
+      <Button url={horarios} txtBtn="Horários" isTarget={true} />
     </div>
   )
 }
