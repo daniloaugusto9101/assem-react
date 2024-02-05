@@ -26,7 +26,7 @@ const SectionNoticiasSegundaria = () => {
           >
             <Link
               key={index}
-              to={`/assem-react/post/${obj.id}`}
+              to={`${import.meta.env.VITE_BASE_URL}post/${obj.id}`}
               className="grid grid-cols-2 gap-2 items-center md:grid-cols-none"
             >
               <img src={thumbnail[index].guid.rendered} />

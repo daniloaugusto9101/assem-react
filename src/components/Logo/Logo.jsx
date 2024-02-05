@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Logo = () => {
   return (
     <div className=" p-1 w-14 ">
-      <Link to={"/assem-react/"}>
+      <Link to={import.meta.env.VITE_BASE_URL}>
         <img className="block" src={url} alt="Logo da ASSEM" />
       </Link>
     </div>

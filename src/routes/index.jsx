@@ -19,7 +19,7 @@ import PostDetails from "@components/Posts/PostDetails"
 
 export const router = createBrowserRouter([
   {
-    path: "/assem-react/",
+    path: import.meta.env.VITE_BASE_URL,
     element: <RootLayout />, //rota base da aplicação
 
     // Toas as rotas configuradas aqui são renderizadas no outlet
@@ -29,64 +29,64 @@ export const router = createBrowserRouter([
         element: <NotFoundPage />,
       },
       {
-        path: "/assem-react/",
+        path: import.meta.env.VITE_BASE_URL,
         element: <Home />,
       },
       {
-        path: "/assem-react/blog-noticias",
+        path: `${import.meta.env.VITE_BASE_URL}/blog-noticias`,
         element: <BlogNoticias />,
       },
       {
-        path: "/assem-react/contatos",
+        path: `${import.meta.env.VITE_BASE_URL}/contatos`,
         element: <Contatos />,
       },
       {
-        path: "/assem-react/fique-socio",
+        path: `${import.meta.env.VITE_BASE_URL}/fique-socio`,
         element: <FiqueSocio />,
       },
       {
-        path: "/assem-react/convenio-medico",
+        path: `${import.meta.env.VITE_BASE_URL}/convenio-medico`,
         element: <ConvenioMedico />,
       },
       {
-        path: "/assem-react/atividades-fisicas",
+        path: `${import.meta.env.VITE_BASE_URL}/atividades-fisicas`,
         element: <Atividades />,
       },
       {
-        path: "/assem-react/clube-de-desconto",
+        path: `${import.meta.env.VITE_BASE_URL}/clube-de-desconto`,
         element: <ClubeDeDesconto />,
       },
       {
-        path: "/assem-react/clube-de-campo",
+        path: `${import.meta.env.VITE_BASE_URL}/clube-de-campo`,
         element: <ClubeDeCampo />,
       },
 
       {
-        path: "/assem-react/pousada-litoral",
+        path: `${import.meta.env.VITE_BASE_URL}/pousada-litoral`,
         element: <PousadaLitoral />,
       },
       {
-        path: "/assem-react/diretoria-executiva",
+        path: `${import.meta.env.VITE_BASE_URL}/diretoria-executiva`,
         element: <DiretoriaExecutiva />,
       },
       {
-        path: "/assem-react/conselho-fiscal",
+        path: `${import.meta.env.VITE_BASE_URL}/conselho-fiscal`,
         element: <ConselhoFiscal />,
       },
       {
-        path: "/assem-react/conselho-deliberativo",
+        path: `${import.meta.env.VITE_BASE_URL}/conselho-deliberativo`,
         element: <ConselhoDeliberativo />,
       },
       {
-        path: "/assem-react/nossa-historia",
+        path: `${import.meta.env.VITE_BASE_URL}/nossa-historia`,
         element: <NossaHistoria />,
       },
       {
-        path: "/assem-react/estatuto",
+        path: `${import.meta.env.VITE_BASE_URL}/estatutoia`,
         element: <Estatuto />,
       },
       {
-        path: "/assem-react/post/:postId",
+        path: `${import.meta.env.VITE_BASE_URL}/post/:postId`,
         element: <PostDetails />,
       },
     ],

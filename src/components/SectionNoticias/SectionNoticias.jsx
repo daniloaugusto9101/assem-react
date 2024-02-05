@@ -14,7 +14,7 @@ const SectionNoticias = () => {
         to="./blog-noticias"
         className="md:text-right text-2xl block text-secondary-700 mt-10 hover:font-bold"
       >
-        Mais notícias...
+        Mais notícias...{import.meta.env.VITE_BASE_URL}
       </Link>
     </section>
   )
